@@ -10,6 +10,7 @@ Technical documentation for maintaining and releasing the CHUJ modpack repo.
 - `modpack/resource-packs.lock.json`: generated resolved resource pack artifacts
 - `modpack/shader-packs.lock.json`: generated resolved shader pack artifacts
 - `scripts/resolve_manifests.py`: render template + resolve lock files from `pack.toml`
+- `scripts/generate_readme.py`: generate user-facing `README.md` from `pack.toml`
 - `scripts/build_mrpack.py`: build client/server `.mrpack` from generated JSON artifacts
 - `.github/workflows/release.yml`: resolves + builds + uploads both packs on tag push
 - `flake.nix`: local Nix development shell
@@ -76,6 +77,14 @@ Validate without writing files:
 python3 scripts/resolve_manifests.py --target all --check
 ```
 
+## Generate README
+
+Regenerate the user-facing `README.md` after pack edits:
+
+```bash
+python3 scripts/generate_readme.py
+```
+
 ## Local builds
 
 ### Option 1: Nix (recommended)
@@ -83,6 +92,7 @@ python3 scripts/resolve_manifests.py --target all --check
 ```bash
 nix develop
 python3 scripts/resolve_manifests.py --target all
+python3 scripts/generate_readme.py
 python3 scripts/build_mrpack.py --side both
 ```
 
@@ -96,6 +106,7 @@ Build both packs:
 
 ```bash
 python3 scripts/resolve_manifests.py --target all
+python3 scripts/generate_readme.py
 python3 scripts/build_mrpack.py
 ```
 
@@ -125,7 +136,8 @@ git push origin v0.1.0
 
 4. GitHub Actions runs:
    1. `scripts/resolve_manifests.py --target all`
-   2. `scripts/build_mrpack.py --side both --version <tag-version>`
+   2. `scripts/generate_readme.py`
+   3. `scripts/build_mrpack.py --side both --version <tag-version>`
 5. Release assets uploaded:
 
 - `chuj-client-<version>.mrpack`

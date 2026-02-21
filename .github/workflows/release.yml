@@ -25,6 +25,7 @@ jobs:
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
           python3 scripts/resolve_manifests.py --target all
+          python3 scripts/generate_readme.py
           python3 scripts/build_mrpack.py --side both --version "$VERSION"
 
       - name: Upload release assets
