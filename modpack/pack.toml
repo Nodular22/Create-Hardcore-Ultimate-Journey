@@ -104,7 +104,7 @@ mods = [
 [mods.qol]
 mods = [
   { url = "https://modrinth.com/project/8shC1gFX", side = "client", name = "BetterF3" },
-  { url = "https://modrinth.com/project/idMHQ4n2", side = "both", name = "CustomSkinLoader" },
+  { url = "https://modrinth.com/project/idMHQ4n2", side = "client", name = "CustomSkinLoader" },
   { url = "https://modrinth.com/project/u6dRKJwZ", side = "both", name = "Just Enough Items (JEI)" },
   { url = "https://modrinth.com/project/O7RBXm3n", side = "client", name = "Inventory Profiles Next" },
   { url = "https://modrinth.com/project/mSQF1NpT", side = "both", name = "Elytra Slot" },
@@ -118,11 +118,11 @@ mods = [
 [mods.performance]
 mods = [
   { url = "https://modrinth.com/project/GchcoXML", side = "both", name = "Oculus" },
-  { url = "https://modrinth.com/project/ndHYMY2K", side = "both", name = "Iris & Oculus Flywheel Compat" },
-  { url = "https://modrinth.com/project/sk9rgfiA", side = "both", name = "Embeddium" },
-  { url = "https://modrinth.com/project/NNAgCjsB", side = "both", name = "EntityCulling" },
+  { url = "https://modrinth.com/project/ndHYMY2K", side = "client", name = "Iris & Oculus Flywheel Compat" },
+  { url = "https://modrinth.com/project/sk9rgfiA", side = "client", name = "Embeddium" },
+  { url = "https://modrinth.com/project/NNAgCjsB", side = "client", name = "EntityCulling" },
   { url = "https://modrinth.com/project/uXXizFIs", side = "both", name = "FerriteCore" },
-  { url = "https://modrinth.com/project/5ZwdcRci", side = "both", name = "ImmediatelyFast" },
+  { url = "https://modrinth.com/project/5ZwdcRci", side = "client", name = "ImmediatelyFast" },
   { url = "https://modrinth.com/project/NRjRiSSD", side = "both", name = "Memory Leak Fix" },
   { url = "https://modrinth.com/project/uCdwusMi", side = "client", name = "Distant Horizons" },
   { url = "https://modrinth.com/project/fALzjamp", side = "server", name = "Chunky" }

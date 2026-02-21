@@ -15,7 +15,7 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 ## Pack info
 
 - Minecraft: `1.20.1`
-- Loader: `Forge 47.2.0`
+- Loader: `Forge 47.4.10`
 
 ## Source of truth
 
