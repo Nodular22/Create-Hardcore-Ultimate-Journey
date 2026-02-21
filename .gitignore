@@ -1,0 +1,6 @@
+dist/
+*.mrpack
+.DS_Store
+__pycache__/
+*.pyc
+modpack/*.lock.json

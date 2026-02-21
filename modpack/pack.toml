@@ -1,0 +1,165 @@
+[pack]
+format_version = 1
+game = "minecraft"
+name = "CHUJ - Create: Hardcore Ultimate Journey"
+summary = "A hardcore Create-focused adventure pack for friends."
+version_id = "dev"
+
+[dependencies]
+minecraft = "1.20.1"
+loader = "forge"
+loader_version = "47.4.10"
+
+[build]
+slug = "chuj"
+default_side = "both"
+dist_dir = "dist"
+
+# Create-related mods
+[mods.create_addons]
+mods = [
+  #
+  { url = "https://modrinth.com/project/LNytGWDc", side = "both", name = "Create" },
+
+  #
+  { url = "https://modrinth.com/project/ZzjhlDgM", side = "both", name = "Create: Steam 'n' Rails" },
+  { url = "https://modrinth.com/project/ZM3tt6p1", side = "both", name = "Create Diesel Generators" },
+  { url = "https://modrinth.com/project/JWGBpFUP", side = "both", name = "Create Enchantment Industry" },
+  { url = "https://modrinth.com/project/z611fdf7", side = "both", name = "Create Nuclear" },
+  { url = "https://modrinth.com/project/WROfLLvn", side = "both", name = "Create: Trading Floor" },
+  { url = "https://modrinth.com/project/btq68HMO", side = "both", name = "Create: Central Kitchen" },
+  { url = "https://modrinth.com/project/4HnO3el1", side = "both", name = "Create: Food" },
+
+  # QoL
+  { url = "https://modrinth.com/project/L1RT5SJc", side = "both", name = "Create Goggles" },
+  { url = "https://modrinth.com/project/UbFnAd4l", side = "both", name = "Create Jetpack" },
+  { url = "https://modrinth.com/project/PRHeWeBs", side = "both", name = "Create Utilities" },
+  { url = "https://modrinth.com/project/sH9tXU9f", side = "both", name = "Create: Liquid Fuel" },
+  { url = "https://modrinth.com/project/wPQ6GgFE", side = "both", name = "Create: Power Loader" },
+  { url = "https://modrinth.com/project/Q4F90RHI", side = "both", name = "Create: Armor Trims" },
+
+  # New receipes
+  { url = "https://modrinth.com/project/KKlx33Ch", side = "both", name = "Create: Stones" },  
+  { url = "https://modrinth.com/project/AqQzrKJo", side = "both", name = "Create: Renewable Brass" },  
+  { url = "https://modrinth.com/project/Mn8ziD0c", side = "both", name = "Create: High Pressure" },
+  { url = "https://modrinth.com/project/nGq1sdd2", side = "both", name = "Create: Renewable Netherite" },
+  { url = "https://modrinth.com/project/ae2lDuIP", side = "both", name = "Create: Totem Factory" },  
+
+  # Decorations
+  { url = "https://modrinth.com/project/UT2M39wf", side = "both", name = "Create: Copycats+" },
+  { url = "https://modrinth.com/project/r4Knci2k", side = "both", name = "Create: Interiors" },
+  { url = "https://modrinth.com/project/yGttHo06", side = "both", name = "Create: Sound of Steam" }
+]
+
+[mods.mobs]
+mods = [
+  { url = "https://modrinth.com/project/MI1LWe93", side = "both", name = "Creeper Overhaul" },
+  { url = "https://modrinth.com/project/Lq6ojcWv", side = "both", name = "Enderman Overhaul" },
+  { url = "https://modrinth.com/project/qEYs2G9A", side = "both", name = "Golem Overhaul" },
+  { url = "https://modrinth.com/project/JiEhJ3WG", side = "both", name = "More Mob Variants" },
+  { url = "https://modrinth.com/project/8YcE8y4T", side = "both", name = "Ribbits" },
+  { url = "https://modrinth.com/project/Yd4wb5wZ", side = "both", name = "Critters and Companions" },
+  { url = "https://modrinth.com/project/BOCJKD49", side = "both", name = "Friends & Foes" },
+  { url = "https://modrinth.com/project/gJKLGvbS", side = "both", name = "Ghost" }
+]
+
+[mods.world_generation]
+mods = [
+  { url = "https://modrinth.com/project/8oi3bsk5", side = "both", name = "Terralith" },
+  { url = "https://modrinth.com/project/lWDHr9jE", side = "both", name = "Tectonic" },
+  { url = "https://modrinth.com/project/ZVzW5oNS", side = "both", name = "Incendium" },
+  { url = "https://modrinth.com/project/LPjGiSO4", side = "both", name = "Nullscape" },
+  { url = "https://modrinth.com/project/aKCwCJlY", side = "both", name = "Structory" },
+  { url = "https://modrinth.com/project/j3FONRYr", side = "both", name = "Structory: Towers" },
+
+  { url = "https://modrinth.com/project/Z2mXHnxP", side = "both", name = "YUNG's Better Nether Fortresses" },
+  { url = "https://modrinth.com/project/3dT9sgt4", side = "both", name = "YUNG's Better Ocean Monuments" },
+  { url = "https://modrinth.com/project/o1C1Dkj5", side = "both", name = "YUNG's Better Dungeons" },
+  { url = "https://modrinth.com/project/z9Ve58Ih", side = "both", name = "YUNG's Better Jungle Temples" },
+  { url = "https://modrinth.com/project/HjmxVlSr", side = "both", name = "YUNG's Better Mineshafts" },
+  { url = "https://modrinth.com/project/2BwBOmBQ", side = "both", name = "YUNG's Better End Island" },
+  { url = "https://modrinth.com/project/t5FRdP87", side = "both", name = "YUNG's Better Witch Huts" },
+  { url = "https://modrinth.com/project/kidLKymU", side = "both", name = "YUNG's Better Strongholds" },
+  { url = "https://modrinth.com/project/XNlO7sBv", side = "both", name = "YUNG's Better Desert Temples" },
+  { url = "https://modrinth.com/project/Ht4BfYp6", side = "both", name = "YUNG's Bridges" },
+  { url = "https://modrinth.com/project/ZYgyPyfq", side = "both", name = "YUNG's Extras" }
+]
+
+# Other gameplay/content mods
+[mods.gameplay]
+mods = [
+  { url = "https://modrinth.com/project/R2OftAxM", side = "both", name = "Farmer's Delight" },
+  { url = "https://modrinth.com/project/yHN0njMr", side = "both", name = "End's Delight" },
+  { url = "https://modrinth.com/project/O53VhQoZ", side = "both", name = "My Nether's Delight" },
+  { url = "https://modrinth.com/project/1DWmBJVA", side = "both", name = "[Let's Do] Vinery" },
+  { url = "https://modrinth.com/project/6iTJugQR", side = "both", name = "Amendments" },
+  { url = "https://modrinth.com/project/fFEIiSDQ", side = "both", name = "Supplementaries" },
+  { url = "https://modrinth.com/project/pJmCFF0p", side = "both", name = "Handcrafted" },
+  { url = "https://modrinth.com/project/rlloIFEV", side = "both", name = "Traveler's Backpack" },
+  { url = "https://modrinth.com/project/1bokaNcj", side = "both", name = "Xaero's Minimap" },
+  { url = "https://modrinth.com/project/NcUtCpym", side = "both", name = "Xaero's World Map" }
+]
+
+# Quality-of-life mods
+[mods.qol]
+mods = [
+  { url = "https://modrinth.com/project/8shC1gFX", side = "client", name = "BetterF3" },
+  { url = "https://modrinth.com/project/idMHQ4n2", side = "both", name = "CustomSkinLoader" },
+  { url = "https://modrinth.com/project/u6dRKJwZ", side = "both", name = "Just Enough Items (JEI)" },
+  { url = "https://modrinth.com/project/O7RBXm3n", side = "client", name = "Inventory Profiles Next" },
+  { url = "https://modrinth.com/project/mSQF1NpT", side = "both", name = "Elytra Slot" },
+  { url = "https://modrinth.com/project/nvQzSEkH", side = "both", name = "Jade" },
+  { url = "https://modrinth.com/project/EsAfCjCV", side = "both", name = "AppleSkin" },
+  { url = "https://modrinth.com/project/aC3cM3Vq", side = "client", name = "Mouse Tweaks" },
+  { url = "https://modrinth.com/project/l6YH9Als", side = "both", name = "spark" }
+]
+
+# Performance mods
+[mods.performance]
+mods = [
+  { url = "https://modrinth.com/project/GchcoXML", side = "both", name = "Oculus" },
+  { url = "https://modrinth.com/project/ndHYMY2K", side = "both", name = "Iris & Oculus Flywheel Compat" },
+  { url = "https://modrinth.com/project/sk9rgfiA", side = "both", name = "Embeddium" },
+  { url = "https://modrinth.com/project/NNAgCjsB", side = "both", name = "EntityCulling" },
+  { url = "https://modrinth.com/project/uXXizFIs", side = "both", name = "FerriteCore" },
+  { url = "https://modrinth.com/project/5ZwdcRci", side = "both", name = "ImmediatelyFast" },
+  { url = "https://modrinth.com/project/NRjRiSSD", side = "both", name = "Memory Leak Fix" },
+  { url = "https://modrinth.com/project/uCdwusMi", side = "client", name = "Distant Horizons" },
+  { url = "https://modrinth.com/project/fALzjamp", side = "server", name = "Chunky" }
+]
+
+# Core libraries
+[mods.libraries]
+mods = [
+  { url = "https://modrinth.com/project/lhGA9TYQ", side = "both", name = "Architectury" },
+  { url = "https://modrinth.com/project/40FYwb4z", side = "both", name = "Caelus API" },
+  { url = "https://modrinth.com/project/9s6osm5g", side = "both", name = "Cloth Config v10 API" },
+  { url = "https://modrinth.com/project/vvuO3ImH", side = "both", name = "Curios API" },
+  { url = "https://modrinth.com/project/8BmcQJ2H", side = "both", name = "GeckoLib 4" },
+  { url = "https://modrinth.com/project/ordsPcFz", side = "both", name = "Kotlin for Forge" },
+  { url = "https://modrinth.com/project/Cg6Uc79H", side = "both", name = "Mantle" },
+  { url = "https://modrinth.com/project/twkfQtEc", side = "both", name = "Moonlight Library" },
+  { url = "https://modrinth.com/project/G1hIVOrD", side = "both", name = "Resourceful Lib" },
+  { url = "https://modrinth.com/project/M1953qlQ", side = "both", name = "Resourcefulconfig" },
+  { url = "https://modrinth.com/project/onSQdWhM", side = "both", name = "libIPN" },
+  { url = "https://modrinth.com/project/Ua7DFN59", side = "both", name = "YUNG's API" },
+  { url = "https://modrinth.com/project/XaDC71GB", side = "both", name = "Lithostitched" }
+]
+
+# Resource packs (client side by default)
+[resourcepacks.default]
+packs = [
+  { url = "https://modrinth.com/project/PGGrfcvL", side = "client", name = "Better Lanterns" },
+  { url = "https://modrinth.com/project/CZrLuVQo", side = "client", name = "Low Shield" },
+  { url = "https://modrinth.com/project/uBBepXuH", side = "client", name = "Animated Items" },
+  { url = "https://modrinth.com/project/6udpuGCH", side = "client", name = "Even Better Enchants" },
+  { url = "https://modrinth.com/project/6vhHOIKw", side = "client", name = "Enchant Icons" }
+]
+
+# Shader packs
+[shaderpacks.default]
+packs = [
+  { url = "https://modrinth.com/project/R6NEzAwj", side = "client", name = "Complementary Shaders - Unbound" },
+  { url = "https://modrinth.com/project/HVnmMxH1", side = "client", name = "Complementary Shaders - Reimagined" },
+  { url = "https://modrinth.com/project/BkTdFBUU", side = "client", name = "Pastel Shaders" }
+]
