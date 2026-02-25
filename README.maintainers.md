@@ -5,7 +5,7 @@ Technical documentation for maintaining and releasing the CHUJ modpack repo.
 ## Repository structure
 
 - `modpack/pack.toml`: single human-edited source of truth
-- `modpack/modrinth.template.json`: generated pack metadata template
+- `modpack/pack.template.json`: generated pack metadata template
 - `modpack/mods.lock.json`: generated resolved mod artifacts
 - `modpack/resource-packs.lock.json`: generated resolved resource pack artifacts
 - `modpack/shader-packs.lock.json`: generated resolved shader pack artifacts
@@ -145,5 +145,5 @@ git push origin v0.1.0
 
 ## Notes
 
-- Generated files (`modrinth.template.json`, `*.lock.json`) are build artifacts derived from `pack.toml`.
+- Generated files (`pack.template.json`, `*.lock.json`) are build artifacts derived from `pack.toml`.
 - `build_mrpack.py` remains intentionally simple and artifact-focused.

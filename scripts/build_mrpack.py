@@ -25,7 +25,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--pack", default="modpack/pack.toml")
     parser.add_argument("--version", default="", help="Override versionId")
-    parser.add_argument("--template", default="modpack/modrinth.template.json")
+    parser.add_argument("--template", default="modpack/pack.template.json")
     parser.add_argument("--mods", default="modpack/mods.lock.json")
     parser.add_argument("--resource-packs", default="modpack/resource-packs.lock.json")
     parser.add_argument("--shader-packs", default="modpack/shader-packs.lock.json")

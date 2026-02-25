@@ -3,5 +3,3 @@ dist/
 .DS_Store
 __pycache__/
 *.pyc
-modpack/*.lock.json
-modpack/*.template.json

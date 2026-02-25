@@ -8,7 +8,7 @@ from pathlib import Path
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Generate non-technical README.md from modpack/pack.toml"
+        description="Generate README.md from modpack/pack.toml"
     )
     parser.add_argument("--pack", default="modpack/pack.toml")
     parser.add_argument("--out", default="README.md")

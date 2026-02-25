@@ -20,7 +20,7 @@ def parse_args() -> argparse.Namespace:
         description="Render template and resolve lock manifests from modpack/pack.toml"
     )
     parser.add_argument("--pack", default="modpack/pack.toml")
-    parser.add_argument("--template-out", default="modpack/modrinth.template.json")
+    parser.add_argument("--template-out", default="modpack/pack.template.json")
     parser.add_argument("--mods-lock", default="modpack/mods.lock.json")
     parser.add_argument(
         "--resource-packs-lock", default="modpack/resource-packs.lock.json"
