@@ -3,7 +3,7 @@
   "game": "minecraft",
   "name": "CHUJ - Create: Hardcore Ultimate Journey",
   "summary": "A hardcore Create-focused adventure pack for friends.",
-  "versionId": "dev",
+  "versionId": "debug",
   "dependencies": {
     "minecraft": "1.20.1",
     "forge": "47.4.10"

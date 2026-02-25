@@ -40,10 +40,10 @@ def item_link(item: dict) -> str:
 
 def side_label(side: str) -> str:
     if side == "client":
-        return "Client"
+        return "Client only"
     if side == "server":
-        return "Server"
-    return "Both"
+        return "Server only"
+    return ""
 
 
 def render_section_lines(top: dict, list_key: str) -> list[str]:
@@ -62,7 +62,8 @@ def render_section_lines(top: dict, list_key: str) -> list[str]:
             name = item_name(entry)
             url = item_link(entry)
             side = side_label(str(entry.get("side", "both")))
-            lines.append(f"- [{name}]({url}) ({side})")
+            suffix = f" ({side})" if side else ""
+            lines.append(f"- [{name}]({url}){suffix}")
         lines.append("")
     if not lines:
         lines.append("- None configured")
@@ -73,6 +74,7 @@ def render_section_lines(top: dict, list_key: str) -> list[str]:
 def build_readme(data: dict) -> str:
     pack = data.get("pack")
     deps = data.get("dependencies")
+    build = data.get("build")
     if not isinstance(pack, dict) or not isinstance(deps, dict):
         raise ValueError("pack.toml must include [pack] and [dependencies]")
 
@@ -81,6 +83,11 @@ def build_readme(data: dict) -> str:
     minecraft = str(deps.get("minecraft", ""))
     loader = str(deps.get("loader", ""))
     loader_version = str(deps.get("loader_version", ""))
+    slug = "chuj"
+    if isinstance(build, dict):
+        raw_slug = build.get("slug")
+        if isinstance(raw_slug, str) and raw_slug.strip():
+            slug = raw_slug.strip()
 
     mods = data.get("mods")
     resourcepacks = data.get("resourcepacks")
@@ -103,12 +110,12 @@ def build_readme(data: dict) -> str:
     lines.append("## Download and play")
     lines.append("")
     lines.append("1. Go to this repository's GitHub Releases page.")
-    lines.append("2. Download the latest `chuj-client-<version>.mrpack`.")
+    lines.append(f"2. Download the latest `{slug}-client-<version>.mrpack`.")
     lines.append("3. Open Prism Launcher.")
     lines.append("4. Click `Add Instance` -> `Import`.")
     lines.append("5. Select the downloaded `.mrpack` file.")
     lines.append("")
-    lines.append("Use `chuj-server-<version>.mrpack` for dedicated server setup.")
+    lines.append(f"Use `{slug}-server-<version>.mrpack` for dedicated server setup.")
     lines.append("")
 
     lines.append("## Pack info")

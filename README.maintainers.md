@@ -22,11 +22,9 @@ Note: `modpack/*.lock.json` is gitignored; lock files are regenerated from `pack
 ### Core metadata
 
 - `[pack]`
-  - `format_version`: Modrinth format version (integer)
-  - `game`: usually `minecraft`
   - `name`: pack name
   - `summary`: pack summary
-  - `version_id`: default version used for local builds
+  - `debug_version`: default version used for local builds
 - `[dependencies]`
   - `minecraft`: Minecraft version
   - `loader`: one of `forge`, `fabric`, `quilt`, `neoforge`

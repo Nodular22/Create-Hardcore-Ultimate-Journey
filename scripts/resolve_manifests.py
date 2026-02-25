@@ -13,6 +13,8 @@ from pathlib import Path
 USER_AGENT = "CHUJ-Pack-Resolver"
 VALID_SIDES = {"both", "client", "server"}
 SUPPORTED_LOADERS = ("fabric", "forge", "quilt", "neoforge")
+MODRINTH_FORMAT_VERSION = 1
+MODRINTH_GAME = "minecraft"
 
 
 def parse_args() -> argparse.Namespace:
@@ -70,15 +72,9 @@ def as_nonempty_str(raw: object, field_name: str) -> str:
 def parse_template(data: dict) -> tuple[dict, str, str]:
     pack = as_table(data.get("pack"), "pack")
     deps = as_table(data.get("dependencies"), "dependencies")
-
-    format_version = pack.get("format_version")
-    if not isinstance(format_version, int) or format_version <= 0:
-        raise ValueError("pack.format_version must be a positive integer")
-
-    game = as_nonempty_str(pack.get("game"), "pack.game")
     name = as_nonempty_str(pack.get("name"), "pack.name")
     summary = as_nonempty_str(pack.get("summary"), "pack.summary")
-    version_id = as_nonempty_str(pack.get("version_id"), "pack.version_id")
+    version_id = as_nonempty_str(pack.get("debug_version"), "pack.debug_version")
 
     minecraft = as_nonempty_str(deps.get("minecraft"), "dependencies.minecraft")
     loader = as_nonempty_str(deps.get("loader"), "dependencies.loader")
@@ -92,8 +88,8 @@ def parse_template(data: dict) -> tuple[dict, str, str]:
         )
 
     template = {
-        "formatVersion": format_version,
-        "game": game,
+        "formatVersion": MODRINTH_FORMAT_VERSION,
+        "game": MODRINTH_GAME,
         "name": name,
         "summary": summary,
         "versionId": version_id,
@@ -113,7 +109,7 @@ def normalize_project_url(url: str) -> str:
         raise ValueError(f"Unsupported host in URL: {url}")
 
     parts = [part for part in parsed.path.split("/") if part]
-    if len(parts) < 2:
+    if len(parts) != 2 or parts[0] != "project":
         raise ValueError(f"Invalid Modrinth project URL path: {url}")
 
     return f"https://modrinth.com/project/{parts[1]}"
@@ -172,7 +168,7 @@ def collect_entries(data: dict, top_key: str, item_key: str) -> list[dict]:
 def parse_project_id(url: str) -> str:
     parsed = urllib.parse.urlparse(url)
     parts = [part for part in parsed.path.split("/") if part]
-    if len(parts) < 2:
+    if len(parts) != 2 or parts[0] != "project":
         raise ValueError(f"Invalid Modrinth project URL path: {url}")
     return parts[1]
 
@@ -194,11 +190,7 @@ def fetch_versions(project_id: str) -> list[dict]:
     if not isinstance(data, list):
         raise RuntimeError(f"Unexpected versions response for project '{project_id}'")
 
-    versions: list[dict] = []
-    for item in data:
-        if isinstance(item, dict):
-            versions.append(item)
-    return versions
+    return [item for item in data if isinstance(item, dict)]
 
 
 def filter_versions(
@@ -223,6 +215,10 @@ def parse_timestamp(ts: str) -> dt.datetime:
     return dt.datetime.fromisoformat(ts.replace("Z", "+00:00"))
 
 
+def version_sort_key(version: dict) -> dt.datetime:
+    return parse_timestamp(str(version.get("date_published", "1970-01-01T00:00:00Z")))
+
+
 def select_version(versions: list[dict], version_number: str | None) -> dict:
     if not versions:
         raise ValueError("No compatible versions found")
@@ -232,21 +228,10 @@ def select_version(versions: list[dict], version_number: str | None) -> dict:
         if not matched:
             raise ValueError(f"No compatible version_number='{version_number}' found")
         if len(matched) > 1:
-            matched.sort(
-                key=lambda v: parse_timestamp(
-                    str(v.get("date_published", "1970-01-01T00:00:00Z"))
-                ),
-                reverse=True,
-            )
+            matched.sort(key=version_sort_key, reverse=True)
         return matched[0]
 
-    versions_sorted = sorted(
-        versions,
-        key=lambda v: parse_timestamp(
-            str(v.get("date_published", "1970-01-01T00:00:00Z"))
-        ),
-        reverse=True,
-    )
+    versions_sorted = sorted(versions, key=version_sort_key, reverse=True)
     return versions_sorted[0]
 
 

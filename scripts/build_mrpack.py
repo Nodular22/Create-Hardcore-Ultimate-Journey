@@ -17,6 +17,7 @@ REQUIRED_TEMPLATE_KEYS = [
 ]
 
 VALID_SIDES = {"both", "client", "server"}
+SIDE_LABELS = {"client": "Client", "server": "Server"}
 
 
 def parse_args() -> argparse.Namespace:
@@ -57,6 +58,11 @@ def read_pack_build_defaults(path: Path) -> dict[str, str]:
         if isinstance(value, str) and value:
             defaults[key] = value
     return defaults
+
+
+def require_file(path: Path, label: str) -> None:
+    if not path.exists():
+        raise FileNotFoundError(f"{label} not found: {path}")
 
 
 def validate_template(template: dict) -> None:
@@ -168,6 +174,12 @@ def build_pack(
     )
 
 
+def sides_to_build(side: str) -> list[str]:
+    if side == "both":
+        return ["client", "server"]
+    return [side]
+
+
 def main() -> int:
     args = parse_args()
     build_defaults = read_pack_build_defaults(Path(args.pack))
@@ -184,14 +196,10 @@ def main() -> int:
     resource_packs_path = Path(args.resource_packs)
     shader_packs_path = Path(args.shader_packs)
 
-    if not template_path.exists():
-        raise FileNotFoundError(f"Template not found: {template_path}")
-    if not mods_path.exists():
-        raise FileNotFoundError(f"Mods file not found: {mods_path}")
-    if not resource_packs_path.exists():
-        raise FileNotFoundError(f"Resource packs file not found: {resource_packs_path}")
-    if not shader_packs_path.exists():
-        raise FileNotFoundError(f"Shader packs file not found: {shader_packs_path}")
+    require_file(template_path, "Template")
+    require_file(mods_path, "Mods file")
+    require_file(resource_packs_path, "Resource packs file")
+    require_file(shader_packs_path, "Shader packs file")
 
     template = read_json(template_path)
     if not isinstance(template, dict):
@@ -202,49 +210,14 @@ def main() -> int:
     resource_packs = validate_entries(read_json(resource_packs_path), str(resource_packs_path))
     shader_packs = validate_entries(read_json(shader_packs_path), str(shader_packs_path))
 
-    if side == "both":
+    for build_side in sides_to_build(side):
         build_pack(
             template=template,
             mods=mods,
             resource_packs=resource_packs,
             shader_packs=shader_packs,
-            side="client",
-            label="Client",
-            args=args,
-            slug=slug,
-            dist=dist,
-        )
-        build_pack(
-            template=template,
-            mods=mods,
-            resource_packs=resource_packs,
-            shader_packs=shader_packs,
-            side="server",
-            label="Server",
-            args=args,
-            slug=slug,
-            dist=dist,
-        )
-    elif side == "client":
-        build_pack(
-            template=template,
-            mods=mods,
-            resource_packs=resource_packs,
-            shader_packs=shader_packs,
-            side="client",
-            label="Client",
-            args=args,
-            slug=slug,
-            dist=dist,
-        )
-    else:
-        build_pack(
-            template=template,
-            mods=mods,
-            resource_packs=resource_packs,
-            shader_packs=shader_packs,
-            side="server",
-            label="Server",
+            side=build_side,
+            label=SIDE_LABELS[build_side],
             args=args,
             slug=slug,
             dist=dist,
