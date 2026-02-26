@@ -17,7 +17,7 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 
 - Minecraft: `1.20.1`
 - Loader: `Forge 47.4.10`
-- Total mods: `88`
+- Total mods: `89`
 
 ## Included mods
 
@@ -25,57 +25,48 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 
 - [Create](https://modrinth.com/project/LNytGWDc)
 - [Create: Steam 'n' Rails](https://modrinth.com/project/ZzjhlDgM)
-- [Create Diesel Generators](https://modrinth.com/project/ZM3tt6p1)
-- [Create Enchantment Industry](https://modrinth.com/project/JWGBpFUP)
-- [Create Nuclear](https://modrinth.com/project/z611fdf7)
+- [Create: Diesel Generators](https://modrinth.com/project/ZM3tt6p1)
+- [Create: Enchantment Industry](https://modrinth.com/project/JWGBpFUP)
+- [Create: Nuclear](https://modrinth.com/project/z611fdf7)
 - [Create: Trading Floor](https://modrinth.com/project/WROfLLvn)
 - [Create: Central Kitchen](https://modrinth.com/project/btq68HMO)
 - [Create: Food](https://modrinth.com/project/4HnO3el1)
-- [Create Goggles](https://modrinth.com/project/L1RT5SJc)
-- [Create Jetpack](https://modrinth.com/project/UbFnAd4l)
-- [Create Utilities](https://modrinth.com/project/PRHeWeBs)
-- [Create: Liquid Fuel](https://modrinth.com/project/sH9tXU9f)
+- [Create: Unbreakable Tools](https://modrinth.com/project/bzzq7Auj)
+- [Create: Goggles](https://modrinth.com/project/L1RT5SJc)
+- [Create: Jetpack](https://modrinth.com/project/UbFnAd4l)
+- [Create: Utilities](https://modrinth.com/project/PRHeWeBs)
 - [Create: Power Loader](https://modrinth.com/project/wPQ6GgFE)
+- [Create: Liquid Fuel](https://modrinth.com/project/sH9tXU9f)
 - [Create: Armor Trims](https://modrinth.com/project/Q4F90RHI)
+- [Create: Tweaked Controllers](https://modrinth.com/project/H6bJ8Ju4)
+- [Create: Curios Jetpack & Backtank](https://modrinth.com/project/BBhCMftF)
+- [Create: Factory Logistics](https://modrinth.com/project/QMGO17gm)
+- [Create: Threaded Trains](https://modrinth.com/project/RYJzdkDr) (Server only)
 - [Create: Stones](https://modrinth.com/project/KKlx33Ch)
 - [Create: Renewable Brass](https://modrinth.com/project/AqQzrKJo)
 - [Create: High Pressure](https://modrinth.com/project/Mn8ziD0c)
 - [Create: Renewable Netherite](https://modrinth.com/project/nGq1sdd2)
 - [Create: Totem Factory](https://modrinth.com/project/ae2lDuIP)
+- [Create: Renewable Notch Apples](https://modrinth.com/project/qpDVQtGR)
+- [Create: Oxidized](https://modrinth.com/project/X9kjRZeX)
 - [Create: Copycats+](https://modrinth.com/project/UT2M39wf)
 - [Create: Interiors](https://modrinth.com/project/r4Knci2k)
 - [Create: Sound of Steam](https://modrinth.com/project/yGttHo06)
+- [Create: Framed](https://modrinth.com/project/15fFZ3f4)
+- [Create: Encased](https://modrinth.com/project/hSSqdyU1)
+- [Create: Vibrant Vaults](https://modrinth.com/project/hddN8ksR)
+- [Create: [Let's Do] Vinery](https://modrinth.com/project/BbP33Lgv)
 
 ### Mobs
 
+- [More Mob Variants](https://modrinth.com/project/JiEhJ3WG)
+- [Golem Overhaul](https://modrinth.com/project/qEYs2G9A)
 - [Creeper Overhaul](https://modrinth.com/project/MI1LWe93)
 - [Enderman Overhaul](https://modrinth.com/project/Lq6ojcWv)
-- [Golem Overhaul](https://modrinth.com/project/qEYs2G9A)
-- [More Mob Variants](https://modrinth.com/project/JiEhJ3WG)
-- [Ribbits](https://modrinth.com/project/8YcE8y4T)
 - [Critters and Companions](https://modrinth.com/project/Yd4wb5wZ)
-- [Friends & Foes](https://modrinth.com/project/BOCJKD49)
+- [Ribbits](https://modrinth.com/project/8YcE8y4T)
 - [Ghost](https://modrinth.com/project/gJKLGvbS)
-
-### World Generation
-
-- [Terralith](https://modrinth.com/project/8oi3bsk5)
-- [Tectonic](https://modrinth.com/project/lWDHr9jE)
-- [Incendium](https://modrinth.com/project/ZVzW5oNS)
-- [Nullscape](https://modrinth.com/project/LPjGiSO4)
-- [Structory](https://modrinth.com/project/aKCwCJlY)
-- [Structory: Towers](https://modrinth.com/project/j3FONRYr)
-- [YUNG's Better Nether Fortresses](https://modrinth.com/project/Z2mXHnxP)
-- [YUNG's Better Ocean Monuments](https://modrinth.com/project/3dT9sgt4)
-- [YUNG's Better Dungeons](https://modrinth.com/project/o1C1Dkj5)
-- [YUNG's Better Jungle Temples](https://modrinth.com/project/z9Ve58Ih)
-- [YUNG's Better Mineshafts](https://modrinth.com/project/HjmxVlSr)
-- [YUNG's Better End Island](https://modrinth.com/project/2BwBOmBQ)
-- [YUNG's Better Witch Huts](https://modrinth.com/project/t5FRdP87)
-- [YUNG's Better Strongholds](https://modrinth.com/project/kidLKymU)
-- [YUNG's Better Desert Temples](https://modrinth.com/project/XNlO7sBv)
-- [YUNG's Bridges](https://modrinth.com/project/Ht4BfYp6)
-- [YUNG's Extras](https://modrinth.com/project/ZYgyPyfq)
+- [Friends & Foes](https://modrinth.com/project/BOCJKD49)
 
 ### Gameplay
 
@@ -86,33 +77,40 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 - [Amendments](https://modrinth.com/project/6iTJugQR)
 - [Supplementaries](https://modrinth.com/project/fFEIiSDQ)
 - [Handcrafted](https://modrinth.com/project/pJmCFF0p)
-- [Traveler's Backpack](https://modrinth.com/project/rlloIFEV)
 - [Xaero's Minimap](https://modrinth.com/project/1bokaNcj)
 - [Xaero's World Map](https://modrinth.com/project/NcUtCpym)
 
 ### Qol
 
-- [BetterF3](https://modrinth.com/project/8shC1gFX) (Client only)
-- [CustomSkinLoader](https://modrinth.com/project/idMHQ4n2) (Client only)
-- [Just Enough Items (JEI)](https://modrinth.com/project/u6dRKJwZ)
-- [Inventory Profiles Next](https://modrinth.com/project/O7RBXm3n) (Client only)
-- [Elytra Slot](https://modrinth.com/project/mSQF1NpT)
 - [Jade](https://modrinth.com/project/nvQzSEkH)
 - [AppleSkin](https://modrinth.com/project/EsAfCjCV)
-- [Mouse Tweaks](https://modrinth.com/project/aC3cM3Vq) (Client only)
+- [Just Enough Items (JEI)](https://modrinth.com/project/u6dRKJwZ)
 - [spark](https://modrinth.com/project/l6YH9Als)
+- [BetterF3](https://modrinth.com/project/8shC1gFX) (Client only)
+- [CustomSkinLoader](https://modrinth.com/project/idMHQ4n2) (Client only)
+- [Inventory Profiles Next](https://modrinth.com/project/O7RBXm3n) (Client only)
+- [Mouse Tweaks](https://modrinth.com/project/aC3cM3Vq) (Client only)
+
+### Storage
+
+- [Sophisticated Core](https://modrinth.com/project/nmoqTijg)
+- [Sophisticated Storage](https://modrinth.com/project/hMlaZH8f)
+- [Sophisticated Storage Create Integration](https://modrinth.com/project/MJ0hdevs)
+- [Sophisticated Backpacks](https://modrinth.com/project/TyCTlI4b)
+- [Sophisticated Backpacks Create Integration](https://modrinth.com/project/s85zLEDe)
 
 ### Performance
 
 - [Oculus](https://modrinth.com/project/GchcoXML)
-- [Iris & Oculus Flywheel Compat](https://modrinth.com/project/ndHYMY2K) (Client only)
+- [FerriteCore](https://modrinth.com/project/uXXizFIs)
+- [Memory Leak Fix](https://modrinth.com/project/NRjRiSSD)
 - [Embeddium](https://modrinth.com/project/sk9rgfiA) (Client only)
 - [EntityCulling](https://modrinth.com/project/NNAgCjsB) (Client only)
-- [FerriteCore](https://modrinth.com/project/uXXizFIs)
 - [ImmediatelyFast](https://modrinth.com/project/5ZwdcRci) (Client only)
-- [Memory Leak Fix](https://modrinth.com/project/NRjRiSSD)
 - [Distant Horizons](https://modrinth.com/project/uCdwusMi) (Client only)
+- [Iris & Oculus Flywheel Compat](https://modrinth.com/project/ndHYMY2K) (Client only)
 - [Chunky](https://modrinth.com/project/fALzjamp) (Server only)
+- [Clumps](https://modrinth.com/project/Wnxd13zP) (Server only)
 
 ### Libraries
 
@@ -129,6 +127,9 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 - [libIPN](https://modrinth.com/project/onSQdWhM)
 - [YUNG's API](https://modrinth.com/project/Ua7DFN59)
 - [Lithostitched](https://modrinth.com/project/XaDC71GB)
+- [Anvian's Lib](https://modrinth.com/project/PuTjrq4T)
+- [Rhino](https://modrinth.com/project/sk9knFPE)
+- [KubeJS](https://modrinth.com/project/umyGl7zF)
 
 ## Resource packs
 
@@ -137,15 +138,17 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 - [Better Lanterns](https://modrinth.com/project/PGGrfcvL) (Client only)
 - [Low Shield](https://modrinth.com/project/CZrLuVQo) (Client only)
 - [Animated Items](https://modrinth.com/project/uBBepXuH) (Client only)
-- [Even Better Enchants](https://modrinth.com/project/6udpuGCH) (Client only)
 - [Enchant Icons](https://modrinth.com/project/6vhHOIKw) (Client only)
+- [Even Better Enchants](https://modrinth.com/project/6udpuGCH) (Client only)
+- [Create Style Interface](https://modrinth.com/project/LkwIaJEE) (Client only)
+- [Create brass cursors](https://modrinth.com/project/M1lkKD8r) (Client only)
+- [Create Style Sophisticated Backpacks](https://modrinth.com/project/srJbhHkf) (Client only)
+- [Create Style Sophisticated Storages](https://modrinth.com/project/9MkP9t9t) (Client only)
 
 ## Shader packs
 
 ### Default
 
-- [Complementary Shaders - Unbound](https://modrinth.com/project/R6NEzAwj) (Client only)
-- [Complementary Shaders - Reimagined](https://modrinth.com/project/HVnmMxH1) (Client only)
 - [Pastel Shaders](https://modrinth.com/project/BkTdFBUU) (Client only)
 
 ## Project docs

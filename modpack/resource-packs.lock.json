@@ -24,6 +24,54 @@
     "fileSize": 51369
   },
   {
+    "filename": "Create brass cursor-V3Compat.zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/M1lkKD8r/versions/JjOExmvX/Create%20brass%20cursor-V3Compat.zip"
+    ],
+    "hashes": {
+      "sha1": "6163c0697c58b433146619a0061ab9e211b9886a",
+      "sha512": "349828e3afc995287bd9cb20192d987f8f23037c97a61c87bb7e5ac3795c54b689e78243b7bf61e7ab0b3700f306822462ea0e5ce8c45caa3ac0ae57a8427c1a"
+    },
+    "fileSize": 12975
+  },
+  {
+    "filename": "Create Style Interface 1.20.zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/LkwIaJEE/versions/tJaYNjYw/Create%20Style%20Interface%201.20.zip"
+    ],
+    "hashes": {
+      "sha1": "4bb8fe3a29680d1d36e66b88e4644f7ba1eff4c2",
+      "sha512": "a38d0242d8ca98474d8c2758988916a3ac54cb2531cd10853f8bd3755b9aee046fbffbde7439c8b5819222686d9624a506c3ae94ecc82998c8684c7a0a90c6fe"
+    },
+    "fileSize": 1635015
+  },
+  {
+    "filename": "CreateSophisticatedBackpacks.zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/srJbhHkf/versions/KZj2cwZF/CreateSophisticatedBackpacks.zip"
+    ],
+    "hashes": {
+      "sha1": "0a119ab68a6b2cb824d545c0dc2dc44b1339cc94",
+      "sha512": "0e3d5b38b9b4c578e9612f61450386fcfb59b301909c27991830636fa7d76f45db4d61f360fe181fe3216b71636eba16dcb308c395932d1283e44a6a70a82ea8"
+    },
+    "fileSize": 556651
+  },
+  {
+    "filename": "CreateSophStorage.zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/9MkP9t9t/versions/gmkQsXXv/CreateSophStorage.zip"
+    ],
+    "hashes": {
+      "sha1": "51d06ef9f22b9716c99d911a8aa1cb5b0c7ed318",
+      "sha512": "74b24c280893b93cab80de62159c68dbd93fdc4cbb5c7c34de5c9557fcc82d4ebf8d6b29dca161fd808459c36483a8eec35b7d0a401d161aa15ba2eecb46cc82"
+    },
+    "fileSize": 613558
+  },
+  {
     "filename": "EBE_1.20.x_v1.1.zip",
     "side": "client",
     "downloads": [

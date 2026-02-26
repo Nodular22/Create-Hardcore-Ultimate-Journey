@@ -1,29 +1,5 @@
 [
   {
-    "filename": "ComplementaryReimagined_r5.7.1.zip",
-    "side": "client",
-    "downloads": [
-      "https://cdn.modrinth.com/data/HVnmMxH1/versions/836bPNGo/ComplementaryReimagined_r5.7.1.zip"
-    ],
-    "hashes": {
-      "sha1": "b560f646a124d5204b1fb7321fec373b9c346fa5",
-      "sha512": "840149dd8aff5d5d06d0d5a4ea83d4ea7f72eab3cb2b02de513c1f3eaa6e4627f68d9c0915b86fa37edad73cafd4648f156f373da52810cd34c67d797e0f6aef"
-    },
-    "fileSize": 522970
-  },
-  {
-    "filename": "ComplementaryUnbound_r5.7.1.zip",
-    "side": "client",
-    "downloads": [
-      "https://cdn.modrinth.com/data/R6NEzAwj/versions/d8rcvDTp/ComplementaryUnbound_r5.7.1.zip"
-    ],
-    "hashes": {
-      "sha1": "95883b516298ff4cf1a67ff512086eb67aeedd98",
-      "sha512": "207ad92ab354e1be002e1ccce978da3860af69532ddcdecbc2a943ffe1ff7ac5eec6b021073ae68b93d78499c63d505de3abf63d9058cdf6cb80bed6528b7532"
-    },
-    "fileSize": 522973
-  },
-  {
     "filename": "Pastel-Shaders-Universal-v1.200.zip",
     "side": "client",
     "downloads": [
