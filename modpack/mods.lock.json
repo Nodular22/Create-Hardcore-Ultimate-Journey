@@ -144,18 +144,6 @@
     "fileSize": 19170905
   },
   {
-    "filename": "create-food-1.20.1-1.1.12-forge.jar",
-    "side": "both",
-    "downloads": [
-      "https://cdn.modrinth.com/data/4HnO3el1/versions/gNbuzq2k/create-food-1.20.1-1.1.12-forge.jar"
-    ],
-    "hashes": {
-      "sha1": "908ea1b28bb17f9d5d193242cd71aa6cd39cf255",
-      "sha512": "d1ead56f3847493f2c033e4d6ee48bc13ae76ba62ba6268f7a5e93ef3d9f9cb20a50b75ec9b737534b2c7029fcd9bbd0add4bd39ab35cb1bee2a3d4b44af6025"
-    },
-    "fileSize": 7388242
-  },
-  {
     "filename": "create-renewable-brass-1.0.1.jar",
     "side": "both",
     "downloads": [
@@ -178,18 +166,6 @@
       "sha512": "20fa63a8028cb7fea94e63e9bbbaded4451fa93b00779ca5381bd288ba1233247acc5abd14cfcee1ec46377b74602c96aae64445a0c4c02fa7f17eacb3137e26"
     },
     "fileSize": 2472
-  },
-  {
-    "filename": "create-renewable-netherite-2.0.0.jar",
-    "side": "both",
-    "downloads": [
-      "https://cdn.modrinth.com/data/nGq1sdd2/versions/lwVsE7AU/create-renewable-netherite-2.0.0.jar"
-    ],
-    "hashes": {
-      "sha1": "e86c683dfbd3b6052c56e711eceb084dec9f733a",
-      "sha512": "90f741d8dd1d37a6c7a1df5f8fc383080dfced03b21eaf73d8f9ce04e476a91abba982580ce4dd97f9ddacd71e3e8f582dfa22432bfdff9ba10c66d824e48d57"
-    },
-    "fileSize": 64377
   },
   {
     "filename": "create-stones-2.0.0.jar",
@@ -408,30 +384,6 @@
     "fileSize": 77230
   },
   {
-    "filename": "CreateUnbreakableTools-1.9-1.20.1-forge-13.jar",
-    "side": "both",
-    "downloads": [
-      "https://cdn.modrinth.com/data/bzzq7Auj/versions/dbfY1Zuy/CreateUnbreakableTools-1.9-1.20.1-forge-13.jar"
-    ],
-    "hashes": {
-      "sha1": "a3a5829096073af91613e5f3b5861fdec4eb53ca",
-      "sha512": "f77c7f9621531c198969f9b6754b8e511ed0a6202f2414c1e5fd9a7d052bd490e0d40e979708cab47af7e43ae245a96475b71d3cadafa46141dcb73e2f8c74bf"
-    },
-    "fileSize": 72363
-  },
-  {
-    "filename": "createutilities-0.3.2+1.20.1.jar",
-    "side": "both",
-    "downloads": [
-      "https://cdn.modrinth.com/data/PRHeWeBs/versions/XZ9y3OVL/createutilities-0.3.2%2B1.20.1.jar"
-    ],
-    "hashes": {
-      "sha1": "60eff24cdd0f167643e75f14062845c584245e80",
-      "sha512": "e1227c62ab1da181fbbd7789897823c9c4c9d52338f405dcfc9e28c1a65bb6ad52461ba3d2e8d266c80dffe387aed4ec3ade7da50301f6338482c46ca1555e75"
-    },
-    "fileSize": 358535
-  },
-  {
     "filename": "createvinery-1.0.0.jar",
     "side": "both",
     "downloads": [
@@ -516,18 +468,6 @@
     "fileSize": 1320675
   },
   {
-    "filename": "endermanoverhaul-forge-1.20.1-1.0.4.jar",
-    "side": "both",
-    "downloads": [
-      "https://cdn.modrinth.com/data/Lq6ojcWv/versions/yjxych8u/endermanoverhaul-forge-1.20.1-1.0.4.jar"
-    ],
-    "hashes": {
-      "sha1": "636a2b20a5973fcb80016370865cb4251e029b6a",
-      "sha512": "febe0456384ecc71d1366535ac49c4852820bba19704f4f23e453f9855e1494dfe1c7d9ac617e353baf18a805bfb6fbd9728c5f0641120cd8e5d93ead0c29bd0"
-    },
-    "fileSize": 1208062
-  },
-  {
     "filename": "ends_delight-2.5.1+forge.1.20.1.jar",
     "side": "both",
     "downloads": [
@@ -576,18 +516,6 @@
     "fileSize": 123034
   },
   {
-    "filename": "friendsandfoes-forge-mc1.20.1-3.0.9.jar",
-    "side": "both",
-    "downloads": [
-      "https://cdn.modrinth.com/data/BOCJKD49/versions/ihFi4QrR/friendsandfoes-forge-mc1.20.1-3.0.9.jar"
-    ],
-    "hashes": {
-      "sha1": "f8c84d824c433e7e6e9f44ae6d4885925a08087f",
-      "sha512": "079c68b7a5c97e8de3daf681816d65df5510a1c025fedd8619a47974af67842aca0003d4cefe40e41cecc28b3bd3ec5696653668c42e503c624a6d9789dca04f"
-    },
-    "fileSize": 3622128
-  },
-  {
     "filename": "geckolib-forge-1.20.1-4.8.3.jar",
     "side": "both",
     "downloads": [
@@ -598,30 +526,6 @@
       "sha512": "938f1f703fa77a2e05aad4afa1052260521badee006d29529d0ed4e2d3fbaae47c9ffbc95b5c4982c3386e7e7d6592c9c79df31597cc8238db41fc0b1e431db6"
     },
     "fileSize": 1039047
-  },
-  {
-    "filename": "ghosts-forge-1.20.1-1.3.1.jar",
-    "side": "both",
-    "downloads": [
-      "https://cdn.modrinth.com/data/gJKLGvbS/versions/u68p0GzA/ghosts-forge-1.20.1-1.3.1.jar"
-    ],
-    "hashes": {
-      "sha1": "fc1da396cc97434a1636a78b0b44ed5f6887d91c",
-      "sha512": "d751268d35dd238e43a10ca423d5c6487b88b64c3c42ce2cde9f154998ce851cc662f73c391bd20ec672c9dc6b6dc42eddf12229d3adc2f5dd3464665eea24a9"
-    },
-    "fileSize": 711662
-  },
-  {
-    "filename": "golemoverhaul-forge-1.20.1-1.1.0.jar",
-    "side": "both",
-    "downloads": [
-      "https://cdn.modrinth.com/data/qEYs2G9A/versions/cYcN89gd/golemoverhaul-forge-1.20.1-1.1.0.jar"
-    ],
-    "hashes": {
-      "sha1": "57a7c3c8b38744629ec491553625adb9a987530c",
-      "sha512": "ccbb43782906f5220ba825207840b66530a7f15b04c42b175677d532c432eeeac264a2dfaa884bc172f15a850be0a49a51c052f96e09923bfea57b5037d45622"
-    },
-    "fileSize": 1039298
   },
   {
     "filename": "handcrafted-forge-1.20.1-3.0.6.jar",
@@ -984,16 +888,16 @@
     "fileSize": 3114590
   },
   {
-    "filename": "Steam_Rails-1.6.15-beta+forge-mc1.20.1.jar",
+    "filename": "Steam_Rails-1.7.1+forge-mc1.20.1.jar",
     "side": "both",
     "downloads": [
-      "https://cdn.modrinth.com/data/ZzjhlDgM/versions/syDuEEZD/Steam_Rails-1.6.15-beta%2Bforge-mc1.20.1.jar"
+      "https://cdn.modrinth.com/data/ZzjhlDgM/versions/TYMKdZTh/Steam_Rails-1.7.1%2Bforge-mc1.20.1.jar"
     ],
     "hashes": {
-      "sha1": "924c3efb2187138b85a0d5285dbb65b371c4f7e9",
-      "sha512": "8c9986c0422b73627446e67c2d19fc521d067cee3fb55707a1fedeead4b1ec93e62ce5889a7af314f6cfb528f07365993f6864f8eed07aa38538c2f4e4e8a405"
+      "sha1": "93c32e96f463f5d4758e939916c7a8de79bd6212",
+      "sha512": "973fdf500ffb9e170a7123d99b6333c8bb2962d169be3c1711f0139e5bac34231fb9a1588fa28514e5041127aa974ce8891922cd74123c7800e8f84e804c177d"
     },
-    "fileSize": 10000104
+    "fileSize": 16748161
   },
   {
     "filename": "supplementaries-1.20-3.1.42-forge.jar",
@@ -1006,18 +910,6 @@
       "sha512": "8d52268d665af7d82186cec39d80216078fcf80c3960df07c0ebcf3bf6ff427329932bc2ad7536757a00e26b91c89cbbd4292ed367be786a84ddc00c1bbf208a"
     },
     "fileSize": 13661432
-  },
-  {
-    "filename": "TotemFactory-1.1.0+mc1.20.1-Forge.jar",
-    "side": "both",
-    "downloads": [
-      "https://cdn.modrinth.com/data/ae2lDuIP/versions/usqucgFx/TotemFactory-1.1.0%2Bmc1.20.1-Forge.jar"
-    ],
-    "hashes": {
-      "sha1": "0cd71f0bc716f4ce8353095ea1bd9cd4b1323f33",
-      "sha512": "a627768fdc54de3b8d22b9706935682f1e8a95e8398909780492c5fb526da0ec8672b48a0581848c7362d5d15532bdf55f930e7009ac96207e6c5e4c91e571cd"
-    },
-    "fileSize": 911114
   },
   {
     "filename": "trading_floor-forge-1.20.1-2.0.5.jar",

@@ -26,13 +26,10 @@ mods = [
   { url = "https://modrinth.com/project/z611fdf7", side = "both", name = "Create: Nuclear" },
   { url = "https://modrinth.com/project/WROfLLvn", side = "both", name = "Create: Trading Floor" },
   { url = "https://modrinth.com/project/btq68HMO", side = "both", name = "Create: Central Kitchen" },
-  { url = "https://modrinth.com/project/4HnO3el1", side = "both", name = "Create: Food" },
-  { url = "https://modrinth.com/project/bzzq7Auj", side = "both", name = "Create: Unbreakable Tools" },
 
   # QoL
   { url = "https://modrinth.com/project/L1RT5SJc", side = "both", name = "Create: Goggles" },
   { url = "https://modrinth.com/project/UbFnAd4l", side = "both", name = "Create: Jetpack" },
-  { url = "https://modrinth.com/project/PRHeWeBs", side = "both", name = "Create: Utilities" },
   { url = "https://modrinth.com/project/wPQ6GgFE", side = "both", name = "Create: Power Loader" },
   { url = "https://modrinth.com/project/sH9tXU9f", side = "both", name = "Create: Liquid Fuel" },
   { url = "https://modrinth.com/project/Q4F90RHI", side = "both", name = "Create: Armor Trims" },
@@ -45,8 +42,6 @@ mods = [
   { url = "https://modrinth.com/project/KKlx33Ch", side = "both", name = "Create: Stones" },  
   { url = "https://modrinth.com/project/AqQzrKJo", side = "both", name = "Create: Renewable Brass" },  
   { url = "https://modrinth.com/project/Mn8ziD0c", side = "both", name = "Create: High Pressure" },
-  { url = "https://modrinth.com/project/nGq1sdd2", side = "both", name = "Create: Renewable Netherite" },
-  { url = "https://modrinth.com/project/ae2lDuIP", side = "both", name = "Create: Totem Factory" },  
   { url = "https://modrinth.com/project/qpDVQtGR", side = "both", name = "Create: Renewable Notch Apples" },
   { url = "https://modrinth.com/project/X9kjRZeX", side = "both", name = "Create: Oxidized" },
 
@@ -68,15 +63,9 @@ mods = [
   { url = "https://modrinth.com/project/JiEhJ3WG", side = "both", name = "More Mob Variants" },
 
   #
-  { url = "https://modrinth.com/project/qEYs2G9A", side = "both", name = "Golem Overhaul" },
   { url = "https://modrinth.com/project/MI1LWe93", side = "both", name = "Creeper Overhaul" },
-  { url = "https://modrinth.com/project/Lq6ojcWv", side = "both", name = "Enderman Overhaul" },
   { url = "https://modrinth.com/project/Yd4wb5wZ", side = "both", name = "Critters and Companions" },
   { url = "https://modrinth.com/project/8YcE8y4T", side = "both", name = "Ribbits" },
-  { url = "https://modrinth.com/project/gJKLGvbS", side = "both", name = "Ghost" },
-  
-  #
-  { url = "https://modrinth.com/project/BOCJKD49", side = "both", name = "Friends & Foes" }
 ]
 
 # Other gameplay/content mods

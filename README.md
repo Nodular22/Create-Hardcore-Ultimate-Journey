@@ -17,7 +17,7 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 
 - Minecraft: `1.20.1`
 - Loader: `Forge 47.4.10`
-- Total mods: `89`
+- Total mods: `80`
 
 ## Included mods
 
@@ -30,11 +30,8 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 - [Create: Nuclear](https://modrinth.com/project/z611fdf7)
 - [Create: Trading Floor](https://modrinth.com/project/WROfLLvn)
 - [Create: Central Kitchen](https://modrinth.com/project/btq68HMO)
-- [Create: Food](https://modrinth.com/project/4HnO3el1)
-- [Create: Unbreakable Tools](https://modrinth.com/project/bzzq7Auj)
 - [Create: Goggles](https://modrinth.com/project/L1RT5SJc)
 - [Create: Jetpack](https://modrinth.com/project/UbFnAd4l)
-- [Create: Utilities](https://modrinth.com/project/PRHeWeBs)
 - [Create: Power Loader](https://modrinth.com/project/wPQ6GgFE)
 - [Create: Liquid Fuel](https://modrinth.com/project/sH9tXU9f)
 - [Create: Armor Trims](https://modrinth.com/project/Q4F90RHI)
@@ -45,8 +42,6 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 - [Create: Stones](https://modrinth.com/project/KKlx33Ch)
 - [Create: Renewable Brass](https://modrinth.com/project/AqQzrKJo)
 - [Create: High Pressure](https://modrinth.com/project/Mn8ziD0c)
-- [Create: Renewable Netherite](https://modrinth.com/project/nGq1sdd2)
-- [Create: Totem Factory](https://modrinth.com/project/ae2lDuIP)
 - [Create: Renewable Notch Apples](https://modrinth.com/project/qpDVQtGR)
 - [Create: Oxidized](https://modrinth.com/project/X9kjRZeX)
 - [Create: Copycats+](https://modrinth.com/project/UT2M39wf)
@@ -60,13 +55,9 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 ### Mobs
 
 - [More Mob Variants](https://modrinth.com/project/JiEhJ3WG)
-- [Golem Overhaul](https://modrinth.com/project/qEYs2G9A)
 - [Creeper Overhaul](https://modrinth.com/project/MI1LWe93)
-- [Enderman Overhaul](https://modrinth.com/project/Lq6ojcWv)
 - [Critters and Companions](https://modrinth.com/project/Yd4wb5wZ)
 - [Ribbits](https://modrinth.com/project/8YcE8y4T)
-- [Ghost](https://modrinth.com/project/gJKLGvbS)
-- [Friends & Foes](https://modrinth.com/project/BOCJKD49)
 
 ### Gameplay
 
