@@ -96,10 +96,12 @@ mods = [
   { url = "https://modrinth.com/project/EsAfCjCV", side = "both", name = "AppleSkin" },
   { url = "https://modrinth.com/project/u6dRKJwZ", side = "both", name = "Just Enough Items (JEI)" },
   { url = "https://modrinth.com/project/l6YH9Als", side = "both", name = "spark" },
+  { url = "https://modrinth.com/project/WrpuIfhw", side = "both", name = "Corpse" },
   { url = "https://modrinth.com/project/8shC1gFX", side = "client", name = "BetterF3" },
   { url = "https://modrinth.com/project/idMHQ4n2", side = "client", name = "CustomSkinLoader" },
   { url = "https://modrinth.com/project/O7RBXm3n", side = "client", name = "Inventory Profiles Next" },
   { url = "https://modrinth.com/project/aC3cM3Vq", side = "client", name = "Mouse Tweaks" },
+  { url = "https://modrinth.com/project/Wb5oqrBJ", side = "client", name = "Chat Heads" },
 ]
 
 # Storage mods
@@ -118,7 +120,7 @@ mods = [
   { url = "https://modrinth.com/project/GchcoXML", side = "both", name = "Oculus" },
   { url = "https://modrinth.com/project/uXXizFIs", side = "both", name = "FerriteCore" },
   { url = "https://modrinth.com/project/NRjRiSSD", side = "both", name = "Memory Leak Fix" },
-  { url = "https://modrinth.com/project/sk9rgfiA", side = "client", name = "Embeddium" },
+  { url = "https://modrinth.com/project/sk9rgfiA", side = "both", name = "Embeddium" },
   { url = "https://modrinth.com/project/NNAgCjsB", side = "client", name = "EntityCulling" },
   { url = "https://modrinth.com/project/5ZwdcRci", side = "client", name = "ImmediatelyFast" },
   { url = "https://modrinth.com/project/uCdwusMi", side = "client", name = "Distant Horizons" },
@@ -168,5 +170,4 @@ packs = [
 # Shader packs
 [shaderpacks.default]
 packs = [
-  { url = "https://modrinth.com/project/BkTdFBUU", side = "client", name = "Pastel Shaders" }
 ]
