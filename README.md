@@ -17,7 +17,7 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 
 - Minecraft: `1.20.1`
 - Loader: `Forge 47.4.10`
-- Total mods: `80`
+- Total mods: `93`
 
 ## Included mods
 
@@ -30,6 +30,7 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 - [Create: Nuclear](https://modrinth.com/project/z611fdf7)
 - [Create: Trading Floor](https://modrinth.com/project/WROfLLvn)
 - [Create: Central Kitchen](https://modrinth.com/project/btq68HMO)
+- [Create: Big Cannons](https://modrinth.com/project/GWp4jCJj)
 - [Create: Goggles](https://modrinth.com/project/L1RT5SJc)
 - [Create: Jetpack](https://modrinth.com/project/UbFnAd4l)
 - [Create: Power Loader](https://modrinth.com/project/wPQ6GgFE)
@@ -64,12 +65,20 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 - [Farmer's Delight](https://modrinth.com/project/R2OftAxM)
 - [End's Delight](https://modrinth.com/project/yHN0njMr)
 - [My Nether's Delight](https://modrinth.com/project/O53VhQoZ)
+- [[Let's Do] Farm & Charm](https://modrinth.com/project/HJetCzWo)
 - [[Let's Do] Vinery](https://modrinth.com/project/1DWmBJVA)
+- [[Let's Do] HerbalBrews](https://modrinth.com/project/Eh11TaTm)
+- [[Let's Do] Candlelight](https://modrinth.com/project/qwbArkQk)
+- [[Let's Do] Brewery](https://modrinth.com/project/b7NV2plI)
+- [[Let's Do] Bakery](https://modrinth.com/project/oNB5jhlA)
+- [[Let's Do Addon] Compat](https://modrinth.com/project/FNi5IMiX)
 - [Amendments](https://modrinth.com/project/6iTJugQR)
 - [Supplementaries](https://modrinth.com/project/fFEIiSDQ)
 - [Handcrafted](https://modrinth.com/project/pJmCFF0p)
 - [Xaero's Minimap](https://modrinth.com/project/1bokaNcj)
 - [Xaero's World Map](https://modrinth.com/project/NcUtCpym)
+- [Swashbucklers](https://modrinth.com/project/g6bnDQis)
+- [Musket Mod](https://modrinth.com/project/967vM4zw)
 
 ### Qol
 
@@ -77,10 +86,13 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 - [AppleSkin](https://modrinth.com/project/EsAfCjCV)
 - [Just Enough Items (JEI)](https://modrinth.com/project/u6dRKJwZ)
 - [spark](https://modrinth.com/project/l6YH9Als)
+- [Corpse](https://modrinth.com/project/WrpuIfhw)
+- [No Chat Reports](https://modrinth.com/project/qQyHxfxd)
 - [BetterF3](https://modrinth.com/project/8shC1gFX) (Client only)
 - [CustomSkinLoader](https://modrinth.com/project/idMHQ4n2) (Client only)
-- [Inventory Profiles Next](https://modrinth.com/project/O7RBXm3n) (Client only)
 - [Mouse Tweaks](https://modrinth.com/project/aC3cM3Vq) (Client only)
+- [Chat Heads](https://modrinth.com/project/Wb5oqrBJ) (Client only)
+- [Better Ping Display](https://modrinth.com/project/ZvaHbwoZ) (Client only)
 
 ### Storage
 
@@ -95,7 +107,7 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 - [Oculus](https://modrinth.com/project/GchcoXML)
 - [FerriteCore](https://modrinth.com/project/uXXizFIs)
 - [Memory Leak Fix](https://modrinth.com/project/NRjRiSSD)
-- [Embeddium](https://modrinth.com/project/sk9rgfiA) (Client only)
+- [Embeddium](https://modrinth.com/project/sk9rgfiA)
 - [EntityCulling](https://modrinth.com/project/NNAgCjsB) (Client only)
 - [ImmediatelyFast](https://modrinth.com/project/5ZwdcRci) (Client only)
 - [Distant Horizons](https://modrinth.com/project/uCdwusMi) (Client only)
@@ -121,6 +133,7 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 - [Anvian's Lib](https://modrinth.com/project/PuTjrq4T)
 - [Rhino](https://modrinth.com/project/sk9knFPE)
 - [KubeJS](https://modrinth.com/project/umyGl7zF)
+- [Ritchie's Projectile Library](https://modrinth.com/project/B3pb093D)
 
 ## Resource packs
 
@@ -138,9 +151,7 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 
 ## Shader packs
 
-### Default
-
-- [Pastel Shaders](https://modrinth.com/project/BkTdFBUU) (Client only)
+- None configured
 
 ## Project docs
 

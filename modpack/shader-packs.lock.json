@@ -1,14 +1,1 @@
-[
-  {
-    "filename": "Pastel-Shaders-Universal-v1.200.zip",
-    "side": "client",
-    "downloads": [
-      "https://cdn.modrinth.com/data/BkTdFBUU/versions/w3Pxx3b4/Pastel-Shaders-Universal-v1.200.zip"
-    ],
-    "hashes": {
-      "sha1": "d9492996359ddaad54707f21671a6c47b7189f07",
-      "sha512": "fd5b4970ee6d1582fb616af494fa413f09bd315f945c650b1b8c1a0af5c83e5e961a6e8a5bcbc941c34a6b83eab965f119cb03dcf2ee968b45b79c5c5ffb6f05"
-    },
-    "fileSize": 1023746
-  }
-]
+[]

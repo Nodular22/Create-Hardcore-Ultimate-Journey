@@ -26,6 +26,7 @@ mods = [
   { url = "https://modrinth.com/project/z611fdf7", side = "both", name = "Create: Nuclear" },
   { url = "https://modrinth.com/project/WROfLLvn", side = "both", name = "Create: Trading Floor" },
   { url = "https://modrinth.com/project/btq68HMO", side = "both", name = "Create: Central Kitchen" },
+  { url = "https://modrinth.com/project/GWp4jCJj", side = "both", name = "Create: Big Cannons" },
 
   # QoL
   { url = "https://modrinth.com/project/L1RT5SJc", side = "both", name = "Create: Goggles" },
@@ -76,9 +77,17 @@ mods = [
   { url = "https://modrinth.com/project/yHN0njMr", side = "both", name = "End's Delight" },
   { url = "https://modrinth.com/project/O53VhQoZ", side = "both", name = "My Nether's Delight" },
 
-  # [Let's Do] Vinery
+  # [Let's Do] Series 
+  { url = "https://modrinth.com/project/HJetCzWo", side = "both", name = "[Let's Do] Farm & Charm" },
   { url = "https://modrinth.com/project/1DWmBJVA", side = "both", name = "[Let's Do] Vinery" },
+  { url = "https://modrinth.com/project/Eh11TaTm", side = "both", name = "[Let's Do] HerbalBrews" },
+  { url = "https://modrinth.com/project/qwbArkQk", side = "both", name = "[Let's Do] Candlelight" },
+  { url = "https://modrinth.com/project/b7NV2plI", side = "both", name = "[Let's Do] Brewery" },
+  { url = "https://modrinth.com/project/oNB5jhlA", side = "both", name = "[Let's Do] Bakery" },
   
+  # Compatibility
+  { url = "https://modrinth.com/project/FNi5IMiX", side = "both", name = "[Let's Do Addon] Compat" },
+
   # Vanilla blocks tweaks + Decorations
   { url = "https://modrinth.com/project/6iTJugQR", side = "both", name = "Amendments" },
   { url = "https://modrinth.com/project/fFEIiSDQ", side = "both", name = "Supplementaries" },
@@ -86,7 +95,13 @@ mods = [
 
   # Map
   { url = "https://modrinth.com/project/1bokaNcj", side = "both", name = "Xaero's Minimap" },
-  { url = "https://modrinth.com/project/NcUtCpym", side = "both", name = "Xaero's World Map" }
+  { url = "https://modrinth.com/project/NcUtCpym", side = "both", name = "Xaero's World Map" },
+
+  # Ships
+  { url = "https://modrinth.com/project/g6bnDQis", side = "both", name = "Swashbucklers" },
+
+  # Guns
+  { url = "https://modrinth.com/project/967vM4zw", side = "both", name = "Musket Mod" },
 ]
 
 # Quality-of-life mods
@@ -97,11 +112,12 @@ mods = [
   { url = "https://modrinth.com/project/u6dRKJwZ", side = "both", name = "Just Enough Items (JEI)" },
   { url = "https://modrinth.com/project/l6YH9Als", side = "both", name = "spark" },
   { url = "https://modrinth.com/project/WrpuIfhw", side = "both", name = "Corpse" },
+  { url = "https://modrinth.com/project/qQyHxfxd", side = "both", name = "No Chat Reports" },
   { url = "https://modrinth.com/project/8shC1gFX", side = "client", name = "BetterF3" },
   { url = "https://modrinth.com/project/idMHQ4n2", side = "client", name = "CustomSkinLoader" },
-  { url = "https://modrinth.com/project/O7RBXm3n", side = "client", name = "Inventory Profiles Next" },
   { url = "https://modrinth.com/project/aC3cM3Vq", side = "client", name = "Mouse Tweaks" },
   { url = "https://modrinth.com/project/Wb5oqrBJ", side = "client", name = "Chat Heads" },
+  { url = "https://modrinth.com/project/ZvaHbwoZ", side = "client", name = "Better Ping Display" },
 ]
 
 # Storage mods
@@ -148,6 +164,7 @@ mods = [
   { url = "https://modrinth.com/project/PuTjrq4T", side = "both", name = "Anvian's Lib" },
   { url = "https://modrinth.com/project/sk9knFPE", side = "both", name = "Rhino" },
   { url = "https://modrinth.com/project/umyGl7zF", side = "both", name = "KubeJS" },
+  { url = "https://modrinth.com/project/B3pb093D", side = "both", name = "Ritchie's Projectile Library" },
 ]
 
 # Resource packs

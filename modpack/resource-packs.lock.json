@@ -48,16 +48,16 @@
     "fileSize": 1635015
   },
   {
-    "filename": "CreateSophisticatedBackpacks.zip",
+    "filename": "CreateSophBackpacks.zip",
     "side": "client",
     "downloads": [
-      "https://cdn.modrinth.com/data/srJbhHkf/versions/KZj2cwZF/CreateSophisticatedBackpacks.zip"
+      "https://cdn.modrinth.com/data/srJbhHkf/versions/3WMwR0Mh/CreateSophBackpacks.zip"
     ],
     "hashes": {
-      "sha1": "0a119ab68a6b2cb824d545c0dc2dc44b1339cc94",
-      "sha512": "0e3d5b38b9b4c578e9612f61450386fcfb59b301909c27991830636fa7d76f45db4d61f360fe181fe3216b71636eba16dcb308c395932d1283e44a6a70a82ea8"
+      "sha1": "0c834a3a13d3d597b6d1273375d2bd049fc3d728",
+      "sha512": "766e3c68aff4bec310daa52f0b0800923c8171b7960f509c7f3fe8dbf8de0375e73bd4a4e5ea2b4ba9cdc77279f4d5ccbc6d3163218aa329052d42e92f0a025c"
     },
-    "fileSize": 556651
+    "fileSize": 557473
   },
   {
     "filename": "CreateSophStorage.zip",
