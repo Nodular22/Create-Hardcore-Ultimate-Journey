@@ -15,7 +15,7 @@ Technical documentation for maintaining and releasing the CHUJ modpack repo.
 - `.github/workflows/release.yml`: resolves + builds + uploads both packs on tag push
 - `flake.nix`: local Nix development shell
 
-Note: `modpack/*.lock.json` is gitignored; lock files are regenerated from `pack.toml`.
+Note: generated artifacts such as `modpack/pack.template.json` and the lock files are committed in this repo and should be regenerated when `pack.toml` changes.
 
 ## `pack.toml` format
 
@@ -33,6 +33,10 @@ Note: `modpack/*.lock.json` is gitignored; lock files are regenerated from `pack
   - `slug`: output filename prefix used by `build_mrpack.py`
   - `default_side`: default side used by `build_mrpack.py` if `--side` is omitted
   - `dist_dir`: output directory used by `build_mrpack.py` if `--dist` is omitted
+- `[overrides]`
+  - `include`: paths shipped in both packs as Modrinth `overrides/`
+  - `client_include`: paths shipped only in the client pack as `client-overrides/`
+  - `server_include`: paths shipped only in the server pack as `server-overrides/`
 
 ### Content sections
 
@@ -51,6 +55,85 @@ Optional:
 
 - `name`: readability only
 - `version`: pin by exact Modrinth `version_number`
+- `additional_dependencies`: extra Modrinth project URLs to force as required dependencies for this mod
+- `enabled`: for `resourcepacks.*.packs` only, controls whether the resolved zip is included in client
+  `options.txt`; defaults to `true`
+
+Under `[resourcepacks.from_overrides]`, you can also set:
+
+- `enabled`: filenames from `overrides/client/resourcepacks/` to enable by default,
+  for example `"My Override Pack.zip"`
+
+For `mods.*.mods` entries, the resolver also auto-includes Modrinth dependencies marked as required.
+All other Modrinth dependency types are ignored. Use `additional_dependencies` when a mod
+needs another dependency that is not declared upstream.
+
+For `resourcepacks.*.packs`, client-side entries are enabled in `options.txt` by default.
+Set `enabled = false` to keep a resource pack included in the pack, but not pre-enabled.
+The client pack build rewrites the `resourcePacks:` line in `overrides/client/options.txt`
+using the resolved filenames from `modpack/resource-packs.lock.json`, so you do not need to
+manually keep download filenames in sync.
+Any entries from `resourcepacks.from_overrides.enabled` are converted to `file/...` entries
+and appended before de-duplication.
+
+Example:
+
+```toml
+{ 
+  url = "https://modrinth.com/project/abc123",
+  side = "both",
+  name = "Some Mod",
+  additional_dependencies = [
+    "https://modrinth.com/project/lib123"
+  ]
+}
+```
+
+Resource pack example:
+
+```toml
+{ 
+  url = "https://modrinth.com/project/pack123",
+  side = "client",
+  name = "Some Resource Pack",
+  enabled = false
+}
+```
+
+## Overrides
+
+The builder can embed local override files and folders into the generated `.mrpack`.
+
+Example:
+
+```toml
+[overrides]
+include = [
+  "overrides/shared/config",
+  "overrides/shared/defaultconfigs",
+  "overrides/shared/mods"
+]
+client_include = [
+  "overrides/client/options.txt",
+  "overrides/client/servers.dat"
+]
+server_include = [
+  "overrides/server/mods"
+]
+```
+
+Suggested layout:
+
+- `overrides/shared/...`: packed into `overrides/`
+- `overrides/client/...`: packed into `client-overrides/`
+- `overrides/server/...`: packed into `server-overrides/`
+
+Each configured path may point to either a file or a directory.
+Directory contents are added recursively. This can be used for mod configs, `servers.dat`,
+`options.txt`, `defaultconfigs`, KubeJS content, and local `.jar` files placed under
+override paths such as `overrides/shared/mods`.
+
+Override install paths must not collide with each other or with downloaded manifest files.
 
 ## Resolve from TOML
 
@@ -118,7 +201,7 @@ python3 scripts/build_mrpack.py --side server
 Build with explicit version:
 
 ```bash
-python3 scripts/build_mrpack.py --side both --version 0.1.1
+python3 scripts/build_mrpack.py --side both --version 0.2.0
 ```
 
 ## Release flow
@@ -128,14 +211,13 @@ python3 scripts/build_mrpack.py --side both --version 0.1.1
 3. Tag and push:
 
 ```bash
-git tag v0.1.0
-git push origin v0.1.0
+git tag v0.2.0
+git push origin v0.2.0
 ```
 
 4. GitHub Actions runs:
    1. `scripts/resolve_manifests.py --target all`
-   2. `scripts/generate_readme.py`
-   3. `scripts/build_mrpack.py --side both --version <tag-version>`
+   2. `scripts/build_mrpack.py --side both --version <tag-version>`
 5. Release assets uploaded:
 
 - `chuj-client-<version>.mrpack`
@@ -143,5 +225,6 @@ git push origin v0.1.0
 
 ## Notes
 
+- Regenerate `README.md` manually with `python3 scripts/generate_readme.py` when you want the public README to reflect `pack.toml` changes.
 - Generated files (`pack.template.json`, `*.lock.json`) are build artifacts derived from `pack.toml`.
 - `build_mrpack.py` remains intentionally simple and artifact-focused.

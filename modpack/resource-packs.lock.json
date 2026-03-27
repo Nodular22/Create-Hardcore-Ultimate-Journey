@@ -1,5 +1,18 @@
 [
   {
+    "filename": "-1.21.2 Fresh Moves v3.1 (With Animated Eyes).zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/slufHzC2/versions/4uyHvhnf/-1.21.2%20Fresh%20Moves%20v3.1%20%28With%20Animated%20Eyes%29.zip"
+    ],
+    "hashes": {
+      "sha1": "7049cc12935ff4be20173c908ad946f530861a4c",
+      "sha512": "40daf2d7bbccd19d38637adc2d14df1e16685aacd6c00af22d686b547d8df675246170137b7372139d34dcb9ad4c3f8606222bc771a85a335242c760254c99b3"
+    },
+    "fileSize": 321871,
+    "projectId": "slufHzC2"
+  },
+  {
     "filename": "animated-items-1_20-1 - 1_4.zip",
     "side": "client",
     "downloads": [
@@ -9,19 +22,21 @@
       "sha1": "38f8d97ed90e64fd117fdc21544887a755172c30",
       "sha512": "8c2a49ffb4a0eda6132c91e46a8583746e821dcdf5aa3968380b22805cc1a58327e3925182a09d792ed5307e14e5c6e2fb7c57a0d2606b579cf21a1cce182e8e"
     },
-    "fileSize": 664378
+    "fileSize": 664378,
+    "projectId": "uBBepXuH"
   },
   {
-    "filename": "Better+Lanterns+v1.2(mc-1.20.1).zip",
+    "filename": "Canoe boats 1.21.8.zip",
     "side": "client",
     "downloads": [
-      "https://cdn.modrinth.com/data/PGGrfcvL/versions/xuTH8Cj3/Better%2BLanterns%2Bv1.2%28mc-1.20.1%29.zip"
+      "https://cdn.modrinth.com/data/5NzqnXzh/versions/iytKsbOC/Canoe%20boats%201.21.8.zip"
     ],
     "hashes": {
-      "sha1": "705b7fa82c39ff568f0b2ea4ebebe71ce2c9be19",
-      "sha512": "10e2ddfd29e4e0e5ac1fcab2672f554a67c8656b97e9cb9d90ef120fd5cfb76f616883caa7b8377d176ebcdb9a7324a3eefa35b3f40d17aa2b4f8f666fc01ec9"
+      "sha1": "4af57b250e467e33229b29df48985f44c5a6fa13",
+      "sha512": "b568b27ac56f1570d94909dfd947a636f9816aa632fe4fe2dfb89b094df8bd2cf6147bba5de7bb60396289f39b74fae3074b8631eaa9acf633733c107cae0853"
     },
-    "fileSize": 51369
+    "fileSize": 1152714,
+    "projectId": "5NzqnXzh"
   },
   {
     "filename": "Create brass cursor-V3Compat.zip",
@@ -33,7 +48,8 @@
       "sha1": "6163c0697c58b433146619a0061ab9e211b9886a",
       "sha512": "349828e3afc995287bd9cb20192d987f8f23037c97a61c87bb7e5ac3795c54b689e78243b7bf61e7ab0b3700f306822462ea0e5ce8c45caa3ac0ae57a8427c1a"
     },
-    "fileSize": 12975
+    "fileSize": 12975,
+    "projectId": "M1lkKD8r"
   },
   {
     "filename": "Create Style Interface 1.20.zip",
@@ -45,7 +61,8 @@
       "sha1": "4bb8fe3a29680d1d36e66b88e4644f7ba1eff4c2",
       "sha512": "a38d0242d8ca98474d8c2758988916a3ac54cb2531cd10853f8bd3755b9aee046fbffbde7439c8b5819222686d9624a506c3ae94ecc82998c8684c7a0a90c6fe"
     },
-    "fileSize": 1635015
+    "fileSize": 1635015,
+    "projectId": "LkwIaJEE"
   },
   {
     "filename": "CreateSophBackpacks.zip",
@@ -57,7 +74,8 @@
       "sha1": "0c834a3a13d3d597b6d1273375d2bd049fc3d728",
       "sha512": "766e3c68aff4bec310daa52f0b0800923c8171b7960f509c7f3fe8dbf8de0375e73bd4a4e5ea2b4ba9cdc77279f4d5ccbc6d3163218aa329052d42e92f0a025c"
     },
-    "fileSize": 557473
+    "fileSize": 557473,
+    "projectId": "srJbhHkf"
   },
   {
     "filename": "CreateSophStorage.zip",
@@ -69,7 +87,34 @@
       "sha1": "51d06ef9f22b9716c99d911a8aa1cb5b0c7ed318",
       "sha512": "74b24c280893b93cab80de62159c68dbd93fdc4cbb5c7c34de5c9557fcc82d4ebf8d6b29dca161fd808459c36483a8eec35b7d0a401d161aa15ba2eecb46cc82"
     },
-    "fileSize": 613558
+    "fileSize": 613558,
+    "projectId": "9MkP9t9t"
+  },
+  {
+    "filename": "Creeper Overhaul RP [V1.2.4].zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/CmaVXt8a/versions/vFmsV3Wn/Creeper%20Overhaul%20RP%20%5BV1.2.4%5D.zip"
+    ],
+    "hashes": {
+      "sha1": "7fe50041fdb7329dc00121cc4e732410dd4ab92e",
+      "sha512": "8d8a8f158d3188d3c33114446648c6c60d1aeb8f08361de1a6dccf90c2a9416af4199012ee41967cbe6dc32a1534759fba8c704785d0e61abb74eae43fe149a6"
+    },
+    "fileSize": 108209,
+    "projectId": "CmaVXt8a"
+  },
+  {
+    "filename": "CrOv + FrAn [V1.2.4].zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/hvAIWKt9/versions/wZIlrtP9/CrOv%20%2B%20FrAn%20%5BV1.2.4%5D.zip"
+    ],
+    "hashes": {
+      "sha1": "6f0c5bf35d4351081f36b175c52a1651cd0d53fe",
+      "sha512": "d9dfe6384eecb8cc41327c89a43e78a37c853187fe76d5dbe464022d0929a5829b163ef6be9ded3925d33037cbe3df59fcec47d700b567097a28bb6ddb0215f4"
+    },
+    "fileSize": 202641,
+    "projectId": "hvAIWKt9"
   },
   {
     "filename": "EBE_1.20.x_v1.1.zip",
@@ -81,7 +126,8 @@
       "sha1": "8a27c246bc45d80c3abc4002e06c2ff3b400129b",
       "sha512": "e8344e07bf27690738b4435dc214a8550b70e39bf2e3ce0efbc816100fe2ce6855eeba9a721def396948cf8a31b1ac4d75baec5d66107848a606d92cc1f2c3be"
     },
-    "fileSize": 62318
+    "fileSize": 62318,
+    "projectId": "6udpuGCH"
   },
   {
     "filename": "enchant icons 1.20 v1.3.zip",
@@ -93,7 +139,73 @@
       "sha1": "d9eb0746e396f3382a81d91288d8f88600d8c760",
       "sha512": "225b42926d0e4d6862a4af9c8dd10c1b43ca8fe1a337a0ea5bf7d0c524ed6b7cff99c9d824c6912f00e8384267740f72d7e5154b4bb328b65303734bcee51522"
     },
-    "fileSize": 164822
+    "fileSize": 164822,
+    "projectId": "6vhHOIKw"
+  },
+  {
+    "filename": "FreshAnimations_v1.10.4.zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/50dA9Sha/versions/xN57JJts/FreshAnimations_v1.10.4.zip"
+    ],
+    "hashes": {
+      "sha1": "73db740a6868e043c5e615c036fca2c912615b6e",
+      "sha512": "41258f9bea1a773d823f9a014d0c08206e9e7b339bc538e1538211fff28fadd06878a836d292cbb636ed6829cd2801a509368ae3eb3ad4bedf42190a0d5f7a90"
+    },
+    "fileSize": 850941,
+    "projectId": "50dA9Sha"
+  },
+  {
+    "filename": "Fusion Block Transitions v1.0.3 for Minecraft 1.20-1.21.8.zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/ajcwQmG4/versions/Mtnn67U3/Fusion%20Block%20Transitions%20v1.0.3%20for%20Minecraft%201.20-1.21.8.zip"
+    ],
+    "hashes": {
+      "sha1": "e2dc1252f80b2ff5897621008ddbb10c2c8765ee",
+      "sha512": "f6901eb70ac14868dc2a151c5df6ed673e43fe2fee1b4929314fe17a1ec4ff864bc39d2b303923b701a3eb1a4bc2bdb311f2f3f6ec44e98f1285ad072d62773a"
+    },
+    "fileSize": 36152,
+    "projectId": "ajcwQmG4"
+  },
+  {
+    "filename": "Fusion Connected Blocks v1.0.2 for Minecraft 1.20-1.21.8.zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/2w5wDdfQ/versions/S5JzbSss/Fusion%20Connected%20Blocks%20v1.0.2%20for%20Minecraft%201.20-1.21.8.zip"
+    ],
+    "hashes": {
+      "sha1": "74ac3ff2e5215703ba9057d0e4662e726a847764",
+      "sha512": "5f3a36ab6dfe5ff54491330d3265ad845433ff347d79d89d14fda862d5cfa4d53f9fc8d183540326fe68f46639d01678b90252bb1066c4ea421424a242e208dc"
+    },
+    "fileSize": 247260,
+    "projectId": "2w5wDdfQ"
+  },
+  {
+    "filename": "Fusion Connected Glass v1.0.1 for Minecraft 1.20-1.21.8.zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/xuN3KzPl/versions/oYKivjVk/Fusion%20Connected%20Glass%20v1.0.1%20for%20Minecraft%201.20-1.21.8.zip"
+    ],
+    "hashes": {
+      "sha1": "48210e165b4df035509c2cdaba654afdb0ad27b3",
+      "sha512": "52eb4da683dffa4cf25d26b79e420d5488509128567ca6ec447859ae9e6bd855ad0cc722b45731f151b0a919283514d2f449e655e273ac86e9ab937e048e889b"
+    },
+    "fileSize": 191578,
+    "projectId": "xuN3KzPl"
+  },
+  {
+    "filename": "Low Fire.zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/1jZGHJ05/versions/pRgzcNkq/Low%20Fire.zip"
+    ],
+    "hashes": {
+      "sha1": "bd21edd014ae1c4ea21e2da3b3bb2c24e6ed2216",
+      "sha512": "f6e535040762b5c4f280e22c832ed58dc779460bdf24116a282b67c51b2996fe5fd11557632f27e9bd9b808ec0e49c254766da27229b052711428186dde48253"
+    },
+    "fileSize": 41745,
+    "projectId": "1jZGHJ05"
   },
   {
     "filename": "Low Shield.zip",
@@ -105,6 +217,20 @@
       "sha1": "1d75cc96a8707a52f4853681379cdcef57e52d62",
       "sha512": "fd101e8504bc06f50b6e47fce7d73cc6725de556932969bac8e0d908bdd0c4da07ebce74df9c8d12ba781da6a68ac9951b3bee32f608f3a7f116befb4c51f5da"
     },
-    "fileSize": 3270
+    "fileSize": 3270,
+    "projectId": "CZrLuVQo"
+  },
+  {
+    "filename": "MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/ZrnmXWf6/versions/uIOGuHMy/MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip"
+    ],
+    "hashes": {
+      "sha1": "eb06ebf0b4c5f5134428dc64ff8c225e12353fe4",
+      "sha512": "262573dd4bc91133d6d5c7abb751345533b82c1d34f694ee555c50089720a90b1aa345300a1fea216aa9aa08a8e58f04b5a2e6a57a75d6027cddfd2a96afa962"
+    },
+    "fileSize": 217991,
+    "projectId": "ZrnmXWf6"
   }
 ]

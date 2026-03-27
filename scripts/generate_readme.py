@@ -2,8 +2,18 @@
 from __future__ import annotations
 
 import argparse
-import tomllib
+import logging
 from pathlib import Path
+
+from common import read_toml
+from logging_utils import configure_logging
+
+
+LOGGER = logging.getLogger("readme")
+CATEGORY_DISPLAY_NAMES = {
+    "qol": "QoL",
+    "client_ui": "Client UI",
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -12,18 +22,13 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--pack", default="modpack/pack.toml")
     parser.add_argument("--out", default="README.md")
+    parser.add_argument("--verbose", action="store_true")
     return parser.parse_args()
 
 
-def read_toml(path: Path) -> dict:
-    with path.open("rb") as f:
-        data = tomllib.load(f)
-    if not isinstance(data, dict):
-        raise ValueError(f"{path} must contain a TOML table")
-    return data
-
-
 def display_name_for_category(key: str) -> str:
+    if key in CATEGORY_DISPLAY_NAMES:
+        return CATEGORY_DISPLAY_NAMES[key]
     return key.replace("_", " ").strip().title()
 
 
@@ -158,13 +163,20 @@ def build_readme(data: dict) -> str:
 
 def main() -> int:
     args = parse_args()
-    data = read_toml(Path(args.pack))
-    out_text = build_readme(data)
+    configure_logging(verbose=args.verbose)
+    try:
+        data = read_toml(Path(args.pack))
+        out_text = build_readme(data)
 
-    out_path = Path(args.out)
-    out_path.write_text(out_text, encoding="utf-8")
-    print(f"Wrote {out_path}")
-    return 0
+        out_path = Path(args.out)
+        out_path.write_text(out_text, encoding="utf-8")
+        LOGGER.info("README: wrote %s", out_path)
+        return 0
+    except Exception as exc:
+        if args.verbose:
+            raise
+        LOGGER.error("Error: %s", exc)
+        return 1
 
 
 if __name__ == "__main__":

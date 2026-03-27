@@ -13,13 +13,15 @@ slug = "chuj"
 default_side = "both"
 dist_dir = "dist"
 
-# Create-related mods
-[mods.create_addons]
+# Create core
+[mods.create_core]
 mods = [
-  #
   { url = "https://modrinth.com/project/LNytGWDc", side = "both", name = "Create" },
+]
 
-  # Main addons
+# Create content
+[mods.create_content]
+mods = [
   { url = "https://modrinth.com/project/ZzjhlDgM", side = "both", name = "Create: Steam 'n' Rails" },
   { url = "https://modrinth.com/project/ZM3tt6p1", side = "both", name = "Create: Diesel Generators" },
   { url = "https://modrinth.com/project/JWGBpFUP", side = "both", name = "Create: Enchantment Industry" },
@@ -27,8 +29,11 @@ mods = [
   { url = "https://modrinth.com/project/WROfLLvn", side = "both", name = "Create: Trading Floor" },
   { url = "https://modrinth.com/project/btq68HMO", side = "both", name = "Create: Central Kitchen" },
   { url = "https://modrinth.com/project/GWp4jCJj", side = "both", name = "Create: Big Cannons" },
+]
 
-  # QoL
+# Create utility and automation
+[mods.create_utility]
+mods = [
   { url = "https://modrinth.com/project/L1RT5SJc", side = "both", name = "Create: Goggles" },
   { url = "https://modrinth.com/project/UbFnAd4l", side = "both", name = "Create: Jetpack" },
   { url = "https://modrinth.com/project/wPQ6GgFE", side = "both", name = "Create: Power Loader" },
@@ -37,154 +42,231 @@ mods = [
   { url = "https://modrinth.com/project/H6bJ8Ju4", side = "both", name = "Create: Tweaked Controllers" },
   { url = "https://modrinth.com/project/BBhCMftF", side = "both", name = "Create: Curios Jetpack & Backtank" },
   { url = "https://modrinth.com/project/QMGO17gm", side = "both", name = "Create: Factory Logistics" },
-  { url = "https://modrinth.com/project/RYJzdkDr", side = "server", name = "Create: Threaded Trains" },
+  { url = "https://modrinth.com/project/RYJzdkDr", side = "both", name = "Create: Threaded Trains" },
+]
 
-  # New receipes
-  { url = "https://modrinth.com/project/KKlx33Ch", side = "both", name = "Create: Stones" },  
-  { url = "https://modrinth.com/project/AqQzrKJo", side = "both", name = "Create: Renewable Brass" },  
+# Create recipe and progression tweaks
+[mods.create_progression]
+mods = [
+  { url = "https://modrinth.com/project/KKlx33Ch", side = "both", name = "Create: Stones" },
+  { url = "https://modrinth.com/project/AqQzrKJo", side = "both", name = "Create: Renewable Brass" },
   { url = "https://modrinth.com/project/Mn8ziD0c", side = "both", name = "Create: High Pressure" },
   { url = "https://modrinth.com/project/qpDVQtGR", side = "both", name = "Create: Renewable Notch Apples" },
   { url = "https://modrinth.com/project/X9kjRZeX", side = "both", name = "Create: Oxidized" },
+]
 
-  # Decorations
+# Create decoration and building
+[mods.create_building]
+mods = [
   { url = "https://modrinth.com/project/UT2M39wf", side = "both", name = "Create: Copycats+" },
   { url = "https://modrinth.com/project/r4Knci2k", side = "both", name = "Create: Interiors" },
   { url = "https://modrinth.com/project/yGttHo06", side = "both", name = "Create: Sound of Steam" },
   { url = "https://modrinth.com/project/15fFZ3f4", side = "both", name = "Create: Framed" },
   { url = "https://modrinth.com/project/hSSqdyU1", side = "both", name = "Create: Encased" },
   { url = "https://modrinth.com/project/hddN8ksR", side = "both", name = "Create: Vibrant Vaults" },
-
-  # [Let's Do] Vinery compatibility
-  { url = "https://modrinth.com/project/BbP33Lgv", side = "both", name = "Create: [Let's Do] Vinery" }
 ]
 
-[mods.mobs]
+# Food and farming
+[mods.food]
 mods = [
-  #
-  { url = "https://modrinth.com/project/JiEhJ3WG", side = "both", name = "More Mob Variants" },
-
-  #
-  { url = "https://modrinth.com/project/MI1LWe93", side = "both", name = "Creeper Overhaul" },
-  { url = "https://modrinth.com/project/Yd4wb5wZ", side = "both", name = "Critters and Companions" },
-  { url = "https://modrinth.com/project/8YcE8y4T", side = "both", name = "Ribbits" },
-]
-
-# Other gameplay/content mods
-[mods.gameplay]
-mods = [
-  # Farmer's Delight
   { url = "https://modrinth.com/project/R2OftAxM", side = "both", name = "Farmer's Delight" },
   { url = "https://modrinth.com/project/yHN0njMr", side = "both", name = "End's Delight" },
   { url = "https://modrinth.com/project/O53VhQoZ", side = "both", name = "My Nether's Delight" },
-
-  # [Let's Do] Series 
   { url = "https://modrinth.com/project/HJetCzWo", side = "both", name = "[Let's Do] Farm & Charm" },
   { url = "https://modrinth.com/project/1DWmBJVA", side = "both", name = "[Let's Do] Vinery" },
   { url = "https://modrinth.com/project/Eh11TaTm", side = "both", name = "[Let's Do] HerbalBrews" },
   { url = "https://modrinth.com/project/qwbArkQk", side = "both", name = "[Let's Do] Candlelight" },
   { url = "https://modrinth.com/project/b7NV2plI", side = "both", name = "[Let's Do] Brewery" },
   { url = "https://modrinth.com/project/oNB5jhlA", side = "both", name = "[Let's Do] Bakery" },
-  
-  # Compatibility
   { url = "https://modrinth.com/project/FNi5IMiX", side = "both", name = "[Let's Do Addon] Compat" },
+]
 
-  # Vanilla blocks tweaks + Decorations
+# Valkyrien Skies
+[mods.valkyrien_skies]
+mods = [
+  { url = "https://modrinth.com/project/V5ujR2yw", side = "both", name = "Valkyrien Skies" },
+  { url = "https://modrinth.com/project/EO8aSHxh", side = "both", name = "Eureka! Ships! for Valkyrien Skies" },
+  { url = "https://modrinth.com/project/84USeAvk", side = "both", name = "Clockwork" },
+  { url = "https://modrinth.com/project/FXDpZRJG", side = "both", name = "Trackwork" },
+]
+
+# Decoration
+[mods.decoration]
+mods = [
   { url = "https://modrinth.com/project/6iTJugQR", side = "both", name = "Amendments" },
   { url = "https://modrinth.com/project/fFEIiSDQ", side = "both", name = "Supplementaries" },
   { url = "https://modrinth.com/project/pJmCFF0p", side = "both", name = "Handcrafted" },
+]
 
-  # Map
+# Decoration
+[mods.skins]
+mods = [
+  { url = "https://modrinth.com/project/ghrZDhGW", side = "both", name = "Skin Restorer" },
+  { url = "https://modrinth.com/project/zV5r3pPn", side = "client", name = "3D Skin Layers" },
+]
+
+
+# Mobs
+[mods.mobs]
+mods = [
+  { url = "https://modrinth.com/project/JiEhJ3WG", side = "both", name = "More Mob Variants" },
+  { url = "https://modrinth.com/project/Yd4wb5wZ", side = "both", name = "Critters and Companions" },
+  { url = "https://modrinth.com/project/8YcE8y4T", side = "both", name = "Ribbits" },
+]
+
+# Navigation
+[mods.map]
+mods = [
   { url = "https://modrinth.com/project/1bokaNcj", side = "both", name = "Xaero's Minimap" },
   { url = "https://modrinth.com/project/NcUtCpym", side = "both", name = "Xaero's World Map" },
+]
 
-  # Ships
-  { url = "https://modrinth.com/project/g6bnDQis", side = "both", name = "Swashbucklers" },
-
-  # Guns
+# Combat
+[mods.combat]
+mods = [
   { url = "https://modrinth.com/project/967vM4zw", side = "both", name = "Musket Mod" },
 ]
 
-# Quality-of-life mods
-[mods.qol]
+# Multiplayer and chat
+[mods.social]
 mods = [
-  { url = "https://modrinth.com/project/nvQzSEkH", side = "both", name = "Jade" },
-  { url = "https://modrinth.com/project/EsAfCjCV", side = "both", name = "AppleSkin" },
-  { url = "https://modrinth.com/project/u6dRKJwZ", side = "both", name = "Just Enough Items (JEI)" },
-  { url = "https://modrinth.com/project/l6YH9Als", side = "both", name = "spark" },
-  { url = "https://modrinth.com/project/WrpuIfhw", side = "both", name = "Corpse" },
+  { url = "https://modrinth.com/project/9eGKb6K1", side = "both", name = "Simple Voice Chat" },
   { url = "https://modrinth.com/project/qQyHxfxd", side = "both", name = "No Chat Reports" },
-  { url = "https://modrinth.com/project/8shC1gFX", side = "client", name = "BetterF3" },
-  { url = "https://modrinth.com/project/idMHQ4n2", side = "client", name = "CustomSkinLoader" },
-  { url = "https://modrinth.com/project/aC3cM3Vq", side = "client", name = "Mouse Tweaks" },
-  { url = "https://modrinth.com/project/Wb5oqrBJ", side = "client", name = "Chat Heads" },
-  { url = "https://modrinth.com/project/ZvaHbwoZ", side = "client", name = "Better Ping Display" },
 ]
 
-# Storage mods
+# Quality of life
+[mods.qol]
+mods = [
+  { url = "https://modrinth.com/project/WrpuIfhw", side = "both", name = "Corpse" },
+  { url = "https://modrinth.com/project/aC3cM3Vq", side = "client", name = "Mouse Tweaks" },
+  { url = "https://modrinth.com/project/K0AkAin6", side = "client", name = "Client Sort" },
+]
+
+# Client models and textures
+[mods.client_models]
+mods = [
+  { url = "https://modrinth.com/project/4I1XuqiY", side = "client", name = "[EMF] Entity Model Features" },
+  { url = "https://modrinth.com/project/BVzZfTc1", side = "client", name = "[ETF] Entity Texture Features" },
+]
+
+# Client interface
+[mods.client_ui]
+mods = [
+  { url = "https://modrinth.com/project/nvQzSEkH", side = "both", name = "Jade" },
+  { url = "https://modrinth.com/project/u6dRKJwZ", side = "both", name = "Just Enough Items (JEI)" },
+  { url = "https://modrinth.com/project/EsAfCjCV", side = "both", name = "AppleSkin" },
+  { url = "https://modrinth.com/project/8shC1gFX", side = "client", name = "BetterF3" },
+  { url = "https://modrinth.com/project/Wb5oqrBJ", side = "client", name = "Chat Heads" },
+  { url = "https://modrinth.com/project/ZvaHbwoZ", side = "client", name = "Better Ping Display" },
+  { url = "https://modrinth.com/project/wMkevcSR", side = "client", name = "Tiny Item Animations" },
+]
+
+# Client rendering helpers
+[mods.client_rendering]
+mods = [
+  { url = "https://modrinth.com/project/p19vrgc2", side = "client", name = "Fusion (Connected Textures)" },
+]
+
+# Storage
 [mods.storage]
 mods = [
   { url = "https://modrinth.com/project/nmoqTijg", side = "both", name = "Sophisticated Core" },
   { url = "https://modrinth.com/project/hMlaZH8f", side = "both", name = "Sophisticated Storage" },
   { url = "https://modrinth.com/project/MJ0hdevs", side = "both", name = "Sophisticated Storage Create Integration" },
   { url = "https://modrinth.com/project/TyCTlI4b", side = "both", name = "Sophisticated Backpacks" },
-  { url = "https://modrinth.com/project/s85zLEDe", side = "both", name = "Sophisticated Backpacks Create Integration" }
+  { url = "https://modrinth.com/project/s85zLEDe", side = "both", name = "Sophisticated Backpacks Create Integration" },
 ]
 
-# Performance mods
+# Performance
 [mods.performance]
 mods = [
-  { url = "https://modrinth.com/project/GchcoXML", side = "both", name = "Oculus" },
+  { url = "https://modrinth.com/project/NNAgCjsB", side = "client", name = "Entity Culling" },
   { url = "https://modrinth.com/project/uXXizFIs", side = "both", name = "FerriteCore" },
-  { url = "https://modrinth.com/project/NRjRiSSD", side = "both", name = "Memory Leak Fix" },
-  { url = "https://modrinth.com/project/sk9rgfiA", side = "both", name = "Embeddium" },
-  { url = "https://modrinth.com/project/NNAgCjsB", side = "client", name = "EntityCulling" },
   { url = "https://modrinth.com/project/5ZwdcRci", side = "client", name = "ImmediatelyFast" },
-  { url = "https://modrinth.com/project/uCdwusMi", side = "client", name = "Distant Horizons" },
+  { url = "https://modrinth.com/project/NRjRiSSD", side = "both", name = "Memory Leak Fix" },
+  { url = "https://modrinth.com/project/GchcoXML", side = "client", name = "Oculus" },
+  { url = "https://modrinth.com/project/sk9rgfiA", side = "client", name = "Embeddium" },
+  { url = "https://modrinth.com/project/uCdwusMi", side = "both", name = "Distant Horizons" },
+  { url = "https://modrinth.com/project/nmDcB62a", side = "both", name = "ModernFix" },
+  { url = "https://modrinth.com/project/LQ3K71Q1", side = "client", name = "Dynamic FPS" },
+  { url = "https://modrinth.com/project/g96Z4WVZ", side = "client", name = "BadOptimizations" },
+  { url = "https://modrinth.com/project/c7m1mi73", side = "both", name = "Packet Fixer" },
+  { url = "https://modrinth.com/project/9mtu0sUO", side = "client", name = "Fast IP Ping" },
   { url = "https://modrinth.com/project/ndHYMY2K", side = "client", name = "Iris & Oculus Flywheel Compat" },
+  { url = "https://modrinth.com/project/Wnxd13zP", side = "both", name = "Clumps" },
   { url = "https://modrinth.com/project/fALzjamp", side = "server", name = "Chunky" },
-  { url = "https://modrinth.com/project/Wnxd13zP", side = "server", name = "Clumps" }
+  { url = "https://modrinth.com/project/l6YH9Als", side = "server", name = "Spark" },
 ]
 
-# Libraries
-[mods.libraries]
-mods = [
-  { url = "https://modrinth.com/project/lhGA9TYQ", side = "both", name = "Architectury" },
-  { url = "https://modrinth.com/project/40FYwb4z", side = "both", name = "Caelus API" },
-  { url = "https://modrinth.com/project/9s6osm5g", side = "both", name = "Cloth Config v10 API" },
-  { url = "https://modrinth.com/project/vvuO3ImH", side = "both", name = "Curios API" },
-  { url = "https://modrinth.com/project/8BmcQJ2H", side = "both", name = "GeckoLib 4" },
-  { url = "https://modrinth.com/project/ordsPcFz", side = "both", name = "Kotlin for Forge" },
-  { url = "https://modrinth.com/project/Cg6Uc79H", side = "both", name = "Mantle" },
-  { url = "https://modrinth.com/project/twkfQtEc", side = "both", name = "Moonlight Library" },
-  { url = "https://modrinth.com/project/G1hIVOrD", side = "both", name = "Resourceful Lib" },
-  { url = "https://modrinth.com/project/M1953qlQ", side = "both", name = "Resourcefulconfig" },
-  { url = "https://modrinth.com/project/onSQdWhM", side = "both", name = "libIPN" },
-  { url = "https://modrinth.com/project/Ua7DFN59", side = "both", name = "YUNG's API" },
-  { url = "https://modrinth.com/project/XaDC71GB", side = "both", name = "Lithostitched" },
-  { url = "https://modrinth.com/project/PuTjrq4T", side = "both", name = "Anvian's Lib" },
-  { url = "https://modrinth.com/project/sk9knFPE", side = "both", name = "Rhino" },
-  { url = "https://modrinth.com/project/umyGl7zF", side = "both", name = "KubeJS" },
-  { url = "https://modrinth.com/project/B3pb093D", side = "both", name = "Ritchie's Projectile Library" },
-]
-
-# Resource packs
-[resourcepacks.default]
+# Resource packs: general tweaks
+[resourcepacks.utility]
 packs = [
-  #
-  { url = "https://modrinth.com/project/PGGrfcvL", side = "client", name = "Better Lanterns" },
-  { url = "https://modrinth.com/project/CZrLuVQo", side = "client", name = "Low Shield" },
   { url = "https://modrinth.com/project/uBBepXuH", side = "client", name = "Animated Items" },
+  { url = "https://modrinth.com/project/CZrLuVQo", side = "client", name = "Low Shield" },
+  { url = "https://modrinth.com/project/1jZGHJ05", side = "client", name = "Low Fire" },
+]
+
+# Resource packs: enchanting
+[resourcepacks.enchanting]
+packs = [
   { url = "https://modrinth.com/project/6vhHOIKw", side = "client", name = "Enchant Icons" },
   { url = "https://modrinth.com/project/6udpuGCH", side = "client", name = "Even Better Enchants" },
+]
 
-  # Create themed
+# Resource packs: Create style
+[resourcepacks.create]
+packs = [
   { url = "https://modrinth.com/project/LkwIaJEE", side = "client", name = "Create Style Interface" },
   { url = "https://modrinth.com/project/M1lkKD8r", side = "client", name = "Create brass cursors" },
   { url = "https://modrinth.com/project/srJbhHkf", side = "client", name = "Create Style Sophisticated Backpacks" },
-  { url = "https://modrinth.com/project/9MkP9t9t", side = "client", name = "Create Style Sophisticated Storages" }
+  { url = "https://modrinth.com/project/9MkP9t9t", side = "client", name = "Create Style Sophisticated Storages" },
+]
+
+# Resource packs: connected textures
+[resourcepacks.fusion]
+packs = [
+  { url = "https://modrinth.com/project/ajcwQmG4", side = "client", name = "Fusion Block Transitions" },
+  { url = "https://modrinth.com/project/2w5wDdfQ", side = "client", name = "Fusion Connected Blocks" },
+  { url = "https://modrinth.com/project/xuN3KzPl", side = "client", name = "Fusion Connected Glass" },
+]
+
+#
+[resourcepacks.mobs]
+packs = [
+  { url = "https://modrinth.com/project/CmaVXt8a", side = "client", name = "Creeper Overhaul" },
+]
+
+#
+[resourcepacks.animations]
+packs = [
+  { url = "https://modrinth.com/project/slufHzC2", side = "client", name = "Fresh Moves" },
+  { url = "https://modrinth.com/project/50dA9Sha", side = "client", name = "Fresh Animations" },
+  { url = "https://modrinth.com/project/ZrnmXWf6", side = "client", name = "More Mob Variants x Fresh Animations" },
+  { url = "https://modrinth.com/project/hvAIWKt9", side = "client", name = "Creeper Overhaul x Fresh Animations" },
+]
+
+# Resource packs: misc
+[resourcepacks.misc]
+packs = [
+  { url = "https://modrinth.com/project/5NzqnXzh", side = "client", name = "Canoe Boats" },
+]
+
+# Resource packs: enabled by default from client override files
+[resourcepacks.from_overrides]
+enabled = [
+  "Flintl0cks_v1.2.zip"
 ]
 
 # Shader packs
 [shaderpacks.default]
-packs = [
+packs = []
+
+# Local overrides bundled into the client/server packs
+[overrides]
+include = []
+client_include = [
+  "overrides/client/resourcepacks/",
+  "overrides/client/options.txt",
+  "overrides/client/servers.dat"
 ]
+server_include = []
