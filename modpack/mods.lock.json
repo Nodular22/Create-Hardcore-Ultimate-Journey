@@ -508,7 +508,7 @@
   },
   {
     "filename": "DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar",
-    "side": "both",
+    "side": "client",
     "downloads": [
       "https://cdn.modrinth.com/data/uCdwusMi/versions/lC6CwqPp/DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar"
     ],

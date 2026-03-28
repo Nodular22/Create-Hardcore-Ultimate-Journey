@@ -156,7 +156,7 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 - [Memory Leak Fix](https://modrinth.com/project/NRjRiSSD)
 - [Oculus](https://modrinth.com/project/GchcoXML) (Client only)
 - [Embeddium](https://modrinth.com/project/sk9rgfiA) (Client only)
-- [Distant Horizons](https://modrinth.com/project/uCdwusMi)
+- [Distant Horizons](https://modrinth.com/project/uCdwusMi) (Client only)
 - [ModernFix](https://modrinth.com/project/nmDcB62a)
 - [Dynamic FPS](https://modrinth.com/project/LQ3K71Q1) (Client only)
 - [BadOptimizations](https://modrinth.com/project/g96Z4WVZ) (Client only)

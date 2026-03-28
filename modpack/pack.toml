@@ -186,7 +186,7 @@ mods = [
   { url = "https://modrinth.com/project/NRjRiSSD", side = "both", name = "Memory Leak Fix" },
   { url = "https://modrinth.com/project/GchcoXML", side = "client", name = "Oculus" },
   { url = "https://modrinth.com/project/sk9rgfiA", side = "client", name = "Embeddium" },
-  { url = "https://modrinth.com/project/uCdwusMi", side = "both", name = "Distant Horizons" },
+  { url = "https://modrinth.com/project/uCdwusMi", side = "client", name = "Distant Horizons" },
   { url = "https://modrinth.com/project/nmDcB62a", side = "both", name = "ModernFix" },
   { url = "https://modrinth.com/project/LQ3K71Q1", side = "client", name = "Dynamic FPS" },
   { url = "https://modrinth.com/project/g96Z4WVZ", side = "client", name = "BadOptimizations" },
