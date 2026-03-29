@@ -1,7 +1,7 @@
 [pack]
 name = "CHUJ - Create: Hardcore Ultimate Journey"
 summary = "A hardcore Create-focused adventure pack for friends."
-debug_version = "debug"
+debug_version = "debug-v0.2.2"
 
 [dependencies]
 minecraft = "1.20.1"
@@ -217,9 +217,9 @@ packs = [
 [resourcepacks.create]
 packs = [
   { url = "https://modrinth.com/project/LkwIaJEE", side = "client", name = "Create Style Interface" },
-  { url = "https://modrinth.com/project/M1lkKD8r", side = "client", name = "Create brass cursors" },
-  { url = "https://modrinth.com/project/srJbhHkf", side = "client", name = "Create Style Sophisticated Backpacks" },
-  { url = "https://modrinth.com/project/9MkP9t9t", side = "client", name = "Create Style Sophisticated Storages" },
+  { url = "https://modrinth.com/project/M1lkKD8r", side = "client", name = "Create brass cursors", incompatible = true },
+  { url = "https://modrinth.com/project/srJbhHkf", side = "client", name = "Create Style Sophisticated Backpacks", incompatible = true },
+  { url = "https://modrinth.com/project/9MkP9t9t", side = "client", name = "Create Style Sophisticated Storages", incompatible = true },
 ]
 
 # Resource packs: connected textures
@@ -241,7 +241,6 @@ packs = [
 packs = [
   { url = "https://modrinth.com/project/slufHzC2", side = "client", name = "Fresh Moves" },
   { url = "https://modrinth.com/project/50dA9Sha", side = "client", name = "Fresh Animations" },
-  { url = "https://modrinth.com/project/ZrnmXWf6", side = "client", name = "More Mob Variants x Fresh Animations" },
   { url = "https://modrinth.com/project/hvAIWKt9", side = "client", name = "Creeper Overhaul x Fresh Animations" },
 ]
 
@@ -249,6 +248,12 @@ packs = [
 [resourcepacks.misc]
 packs = [
   { url = "https://modrinth.com/project/5NzqnXzh", side = "client", name = "Canoe Boats" },
+
+  # NOTE: this resource packs have to be loaded in that priority in order to work
+  # TODO: Add resolution of loading priority and dependency for resource packs
+  { url = "https://modrinth.com/project/dspVZXKP", side = "client", name = "Fast Better Grass" },  
+  { url = "https://modrinth.com/project/ti9KkMHm", side = "client", name = "Simple Grass Flowers" },
+  { url = "https://modrinth.com/project/pOumd1F9", side = "client", name = "Fast Better Grass For Simple Grass Flowers", incompatible = true },
 ]
 
 # Resource packs: enabled by default from client override files

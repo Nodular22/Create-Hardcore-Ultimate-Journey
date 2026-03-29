@@ -143,6 +143,32 @@
     "projectId": "6vhHOIKw"
   },
   {
+    "filename": "Fast Better Grass.zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/dspVZXKP/versions/J3ILsuJi/Fast%20Better%20Grass.zip"
+    ],
+    "hashes": {
+      "sha1": "d5a8cd9fba8a7987e5ddfef11e89e27d76bab77c",
+      "sha512": "0575b567befc8970c3c722bf26729283ae8fc5cc323e6cc07873a190a50beac25d2908d687f8a952cf31745abe4dbf2cc43f38d45626f0b1c0baa8bb428bb4a3"
+    },
+    "fileSize": 10928,
+    "projectId": "dspVZXKP"
+  },
+  {
+    "filename": "FBGFSGF v1.0.zip",
+    "side": "client",
+    "downloads": [
+      "https://cdn.modrinth.com/data/pOumd1F9/versions/rcx31y9J/FBGFSGF%20v1.0.zip"
+    ],
+    "hashes": {
+      "sha1": "198c2925753b632f83ed290f8d7ada930decd660",
+      "sha512": "4fe717607b67f45753886721771a2bfb3e527e988889690ad87ea06727e9fc1f64b3cd760c5edf67086e243facb1a4b99ca80f8625501aa252314b200e9d7135"
+    },
+    "fileSize": 12146,
+    "projectId": "pOumd1F9"
+  },
+  {
     "filename": "FreshAnimations_v1.10.4.zip",
     "side": "client",
     "downloads": [
@@ -221,16 +247,16 @@
     "projectId": "CZrLuVQo"
   },
   {
-    "filename": "MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip",
+    "filename": "Simple Grass Flowers v1.9.6.zip",
     "side": "client",
     "downloads": [
-      "https://cdn.modrinth.com/data/ZrnmXWf6/versions/uIOGuHMy/MoreMobVariants_FreshAnimations_1.3.1-1.9.2.zip"
+      "https://cdn.modrinth.com/data/ti9KkMHm/versions/BFqp4P2V/Simple%20Grass%20Flowers%20v1.9.6.zip"
     ],
     "hashes": {
-      "sha1": "eb06ebf0b4c5f5134428dc64ff8c225e12353fe4",
-      "sha512": "262573dd4bc91133d6d5c7abb751345533b82c1d34f694ee555c50089720a90b1aa345300a1fea216aa9aa08a8e58f04b5a2e6a57a75d6027cddfd2a96afa962"
+      "sha1": "0c94482b3b271f110c79b9f29257376f43adc0bb",
+      "sha512": "47c295f2f0afa9509cceb1a35ad65ce2ada3ec443d068e710d841bda974e448447cfaa2510d7cd8a9c92b308894aec31bc892a5129b6b416d458d58c852de4a2"
     },
-    "fileSize": 217991,
-    "projectId": "ZrnmXWf6"
+    "fileSize": 195291,
+    "projectId": "ti9KkMHm"
   }
 ]

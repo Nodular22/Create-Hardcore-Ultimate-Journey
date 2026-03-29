@@ -58,6 +58,8 @@ Optional:
 - `additional_dependencies`: extra Modrinth project URLs to force as required dependencies for this mod
 - `enabled`: for `resourcepacks.*.packs` only, controls whether the resolved zip is included in client
   `options.txt`; defaults to `true`
+- `incompatible`: for `resourcepacks.*.packs` only, adds the resolved zip to
+  `incompatibleResourcePacks` in client `options.txt`; defaults to `false`
 
 Under `[resourcepacks.from_overrides]`, you can also set:
 
@@ -70,9 +72,11 @@ needs another dependency that is not declared upstream.
 
 For `resourcepacks.*.packs`, client-side entries are enabled in `options.txt` by default.
 Set `enabled = false` to keep a resource pack included in the pack, but not pre-enabled.
-The client pack build rewrites the `resourcePacks:` line in `overrides/client/options.txt`
-using the resolved filenames from `modpack/resource-packs.lock.json`, so you do not need to
-manually keep download filenames in sync.
+Set `incompatible = true` when a pack works in practice but Minecraft marks it as incompatible,
+so the client pack build also rewrites `incompatibleResourcePacks:` with the resolved filename.
+The client pack build fully regenerates `overrides/client/options.txt` with only the
+`resourcePacks:` and `incompatibleResourcePacks:` lines using the resolved filenames from
+`modpack/resource-packs.lock.json`, so you do not need to manually keep download filenames in sync.
 Any entries from `resourcepacks.from_overrides.enabled` are converted to `file/...` entries
 and appended before de-duplication.
 

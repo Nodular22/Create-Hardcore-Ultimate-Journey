@@ -151,6 +151,55 @@ def read_default_enabled_resource_packs(data: dict) -> list[dict[str, str]]:
     return enabled_entries
 
 
+def read_default_incompatible_resource_packs(data: dict) -> list[dict[str, str]]:
+    if not isinstance(data, dict):
+        return []
+
+    resourcepacks = data.get("resourcepacks")
+    if not isinstance(resourcepacks, dict):
+        return []
+
+    incompatible_entries: list[dict[str, str]] = []
+    for category, raw_category in resourcepacks.items():
+        if category == "from_overrides":
+            continue
+        if not isinstance(category, str):
+            raise ValueError("resourcepacks category names must be strings")
+        if not isinstance(raw_category, dict):
+            raise ValueError(f"resourcepacks.{category} must be a table")
+
+        packs = raw_category.get("packs")
+        if packs is None:
+            continue
+        if not isinstance(packs, list):
+            raise ValueError(f"resourcepacks.{category}.packs must be an array")
+
+        for i, raw_pack in enumerate(packs):
+            if not isinstance(raw_pack, dict):
+                raise ValueError(f"resourcepacks.{category}.packs[{i}] must be an object")
+
+            is_incompatible = raw_pack.get("incompatible", False)
+            if not isinstance(is_incompatible, bool):
+                raise ValueError(
+                    f"resourcepacks.{category}.packs[{i}].incompatible must be a boolean"
+                )
+            if not is_incompatible:
+                continue
+
+            url = raw_pack.get("url")
+            side = raw_pack.get("side")
+            if not isinstance(url, str) or not url:
+                raise ValueError(f"resourcepacks.{category}.packs[{i}].url must be a non-empty string")
+            if side not in VALID_SIDES:
+                raise ValueError(
+                    f"resourcepacks.{category}.packs[{i}].side must be one of {sorted(VALID_SIDES)}"
+                )
+
+            incompatible_entries.append({"project_id": parse_project_id(url), "side": side})
+
+    return incompatible_entries
+
+
 def read_enabled_override_resource_pack_entries(data: dict) -> list[str]:
     if not isinstance(data, dict):
         return []
@@ -179,33 +228,17 @@ def read_enabled_override_resource_pack_entries(data: dict) -> list[str]:
     return entries
 
 
-def read_options_resource_packs(path: Path) -> list[str]:
-    if not path.exists():
-        return []
-
-    for line in path.read_text(encoding="utf-8").splitlines():
-        if line.startswith(OPTIONS_RESOURCE_PACKS_PREFIX):
-            raw_value = line[len(OPTIONS_RESOURCE_PACKS_PREFIX) :]
-            return parse_options_string_list(raw_value, path=path, label="resourcePacks")
-    return []
-
-
 def build_default_resource_pack_entries(
     *,
     pack_data: dict,
-    options_path: Path,
     resource_packs: list[dict],
 ) -> list[str]:
     enabled_configs = read_default_enabled_resource_packs(pack_data)
     override_enabled_entries = read_enabled_override_resource_pack_entries(pack_data)
 
     lock_by_project_id: dict[str, dict] = {}
-    lock_filenames: set[str] = set()
     for entry in resource_packs:
-        filename = entry.get("filename")
         project_id = entry.get("projectId")
-        if isinstance(filename, str) and filename:
-            lock_filenames.add(filename)
         if isinstance(project_id, str) and project_id:
             lock_by_project_id[project_id] = entry
 
@@ -229,13 +262,47 @@ def build_default_resource_pack_entries(
 
     resolved_entries.extend(override_enabled_entries)
 
-    existing_entries = read_options_resource_packs(options_path)
-    for existing in existing_entries:
-        if existing == "vanilla" or not existing.startswith("file/"):
+    deduped_entries: list[str] = []
+    seen_entries: set[str] = set()
+    for entry in resolved_entries:
+        if entry in seen_entries:
             continue
-        filename = existing.removeprefix("file/")
-        if filename not in lock_filenames:
-            resolved_entries.append(existing)
+        seen_entries.add(entry)
+        deduped_entries.append(entry)
+
+    return deduped_entries
+
+
+def build_default_incompatible_resource_pack_entries(
+    *,
+    pack_data: dict,
+    resource_packs: list[dict],
+) -> list[str]:
+    incompatible_configs = read_default_incompatible_resource_packs(pack_data)
+
+    lock_by_project_id: dict[str, dict] = {}
+    for entry in resource_packs:
+        project_id = entry.get("projectId")
+        if isinstance(project_id, str) and project_id:
+            lock_by_project_id[project_id] = entry
+
+    resolved_entries: list[str] = []
+    for entry in incompatible_configs:
+        if entry["side"] not in {"both", "client"}:
+            continue
+        lock_entry = lock_by_project_id.get(entry["project_id"])
+        if lock_entry is None:
+            raise ValueError(
+                "Missing resolved resource pack in lockfile for incompatible resource pack project "
+                f"'{entry['project_id']}'. Re-run scripts/resolve_manifests.py --target resourcepacks"
+            )
+
+        filename = lock_entry.get("filename")
+        if not isinstance(filename, str) or not filename:
+            raise ValueError(
+                f"Resolved resource pack for project '{entry['project_id']}' is missing filename"
+            )
+        resolved_entries.append(f"file/{filename}")
 
     deduped_entries: list[str] = []
     seen_entries: set[str] = set()
@@ -248,39 +315,19 @@ def build_default_resource_pack_entries(
     return deduped_entries
 
 
-def render_options_with_resource_packs(path: Path, resource_packs: list[str]) -> str:
-    content = path.read_text(encoding="utf-8") if path.exists() else ""
-    lines = content.splitlines()
+def render_options_with_resource_packs(
+    resource_packs: list[str],
+    incompatible_resource_packs: list[str],
+) -> str:
     rendered_resource_packs = format_options_string_list(
         OPTIONS_RESOURCE_PACKS_PREFIX,
         resource_packs,
     )
     rendered_incompatible = format_options_string_list(
         OPTIONS_INCOMPATIBLE_RESOURCE_PACKS_PREFIX,
-        [],
+        incompatible_resource_packs,
     )
-
-    rendered_lines: list[str] = []
-    saw_resource_packs = False
-    saw_incompatible = False
-
-    for line in lines:
-        if line.startswith(OPTIONS_RESOURCE_PACKS_PREFIX):
-            rendered_lines.append(rendered_resource_packs)
-            saw_resource_packs = True
-            continue
-        if line.startswith(OPTIONS_INCOMPATIBLE_RESOURCE_PACKS_PREFIX):
-            rendered_lines.append(rendered_incompatible)
-            saw_incompatible = True
-            continue
-        rendered_lines.append(line)
-
-    if not saw_resource_packs:
-        rendered_lines.append(rendered_resource_packs)
-    if not saw_incompatible:
-        rendered_lines.append(rendered_incompatible)
-
-    return "\n".join(rendered_lines) + "\n"
+    return f"{rendered_resource_packs}\n{rendered_incompatible}\n"
 
 
 def maybe_generate_options_override(
@@ -298,12 +345,15 @@ def maybe_generate_options_override(
 
     default_entries = build_default_resource_pack_entries(
         pack_data=pack_data,
-        options_path=options_override.source_path,
+        resource_packs=resource_packs,
+    )
+    default_incompatible_entries = build_default_incompatible_resource_pack_entries(
+        pack_data=pack_data,
         resource_packs=resource_packs,
     )
     rendered_options = render_options_with_resource_packs(
-        options_override.source_path,
         default_entries,
+        default_incompatible_entries,
     )
     options_override.source_path.write_text(rendered_options, encoding="utf-8")
     return override_files

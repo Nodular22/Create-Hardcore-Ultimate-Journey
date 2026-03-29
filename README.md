@@ -201,12 +201,14 @@ Use `chuj-server-<version>.mrpack` for dedicated server setup.
 
 - [Fresh Moves](https://modrinth.com/project/slufHzC2) (Client only)
 - [Fresh Animations](https://modrinth.com/project/50dA9Sha) (Client only)
-- [More Mob Variants x Fresh Animations](https://modrinth.com/project/ZrnmXWf6) (Client only)
 - [Creeper Overhaul x Fresh Animations](https://modrinth.com/project/hvAIWKt9) (Client only)
 
 ### Misc
 
 - [Canoe Boats](https://modrinth.com/project/5NzqnXzh) (Client only)
+- [Fast Better Grass](https://modrinth.com/project/dspVZXKP) (Client only)
+- [Simple Grass Flowers](https://modrinth.com/project/ti9KkMHm) (Client only)
+- [Fast Better Grass For Simple Grass Flowers](https://modrinth.com/project/pOumd1F9) (Client only)
 
 ## Shader packs
 
